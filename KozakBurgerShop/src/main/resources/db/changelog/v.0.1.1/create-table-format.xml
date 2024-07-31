@@ -15,7 +15,23 @@
                 <constraints nullable="false" unique="true"/>
             </column>
 
+            <column name="image" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+
             <column name="price" type="decimal">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="description" type="varchar(1000)" >
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="category" type="varchar(80)" >
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="rate" type="decimal" >
                 <constraints nullable="false"/>
             </column>
 

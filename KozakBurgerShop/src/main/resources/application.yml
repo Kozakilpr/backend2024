@@ -2,9 +2,13 @@ spring:
   application:
     name: KozakBurgerShop
   datasource:
-    url: jdbc:postgresql://localhost:5432/KozakBurgerShop
+    url: jdbc:postgresql://localhost:5432/KozakBurgerShopTest2
     username: postgres
     password: 1234
     driver-class-name: org.postgresql.Driver
   liquibase:
     change-log: classpath:db/changelog/db.changelog-master.xml
+  server:
+    servlet:
+      context-path: /api
+

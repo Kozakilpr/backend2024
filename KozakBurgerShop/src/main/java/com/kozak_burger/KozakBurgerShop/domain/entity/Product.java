@@ -20,8 +20,8 @@ public class Product {
     @Column(name = "price")
     private BigDecimal price;
 
-    @Column(name = "active")
-    private boolean active;
+    @Column(name = "image")
+    private String image;
 
     @Column(name = "description")
     private String description;
@@ -32,8 +32,8 @@ public class Product {
     @Column(name = "rate")
     private double rate;
 
-    @Column(name = "image")
-    private String image;
+    @Column(name = "active")
+    private boolean active;
 
     public void setId(Long id) {
         this.id = id;
