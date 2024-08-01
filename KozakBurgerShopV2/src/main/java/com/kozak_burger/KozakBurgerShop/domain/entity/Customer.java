@@ -28,14 +28,14 @@ public class Customer {
     @Column(name = "city")
     private String city;
 
-    @Column(name = "postal address")
+    @Column(name = "postalAddress")
     private String postalAddress;
 
     @Column(name = "email")
     private String email;
 
-    @Column(name = "phonenumber")
-    private int phonenumber;
+    @Column(name = "phoneNumber")
+    private int phoneNumber;
 
     @Column(name = "active")
     private boolean active;
@@ -98,12 +98,12 @@ public class Customer {
         this.email = email;
     }
 
-    public int getPhonenumber() {
-        return phonenumber;
+    public int getPhoneNumber() {
+        return phoneNumber;
     }
 
-    public void setPhonenumber(int phonenumber) {
-        this.phonenumber = phonenumber;
+    public void setPhoneNumber(int phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     public boolean isActive() {
@@ -127,17 +127,17 @@ public class Customer {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Customer customer = (Customer) o;
-        return phonenumber == customer.phonenumber && active == customer.active && Objects.equals(id, customer.id) && Objects.equals(name, customer.name) && Objects.equals(surname, customer.surname) && Objects.equals(street, customer.street) && Objects.equals(city, customer.city) && Objects.equals(postalAddress, customer.postalAddress) && Objects.equals(email, customer.email) && Objects.equals(cart, customer.cart);
+        return phoneNumber == customer.phoneNumber && active == customer.active && Objects.equals(id, customer.id) && Objects.equals(name, customer.name) && Objects.equals(surname, customer.surname) && Objects.equals(street, customer.street) && Objects.equals(city, customer.city) && Objects.equals(postalAddress, customer.postalAddress) && Objects.equals(email, customer.email) && Objects.equals(cart, customer.cart);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, surname, street, city, postalAddress, email, phonenumber, active, cart);
+        return Objects.hash(id, name, surname, street, city, postalAddress, email, phoneNumber, active, cart);
     }
 
     @Override
     public String toString() {
-        return String.format("Customer: id - %d, name -%s, surname -%s, street -%s, city -%s, postal address -%s, email - %s, phonenumber - %d, active - %s, cart - %s", id, name, surname, street, city, postalAddress, email, phonenumber, active ? "yes" : "no", cart == null ? "ERROR! Cart is missing" : cart);
+        return String.format("Customer: id - %d, name -%s, surname -%s, street -%s, city -%s, postalAddress -%s, email - %s, phoneNumber - %d, active - %s, cart - %s", id, name, surname, street, city, postalAddress, email, phoneNumber, active ? "yes" : "no", cart == null ? "ERROR! Cart is missing" : cart);
     }
 
 }
