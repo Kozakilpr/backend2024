@@ -28,23 +28,23 @@ public class Order {
     @Column(name = "city")
     private String city;
 
-    @Column(name = "postal address")
+    @Column(name = "postalAddress")
     private String postalAddress;
 
     @Column(name = "email")
     private String email;
 
-    @Column(name = "phonenumber")
-    private int phonenumber;
+    @Column(name = "phoneNumber")
+    private int phoneNumber;
 
     @Column(name = "title")
     private String title;
 
-    @Column(name = "bill")
-    private BigDecimal bill;
-
     @Column(name = "category")
     private String category;
+
+    @Column(name = "bill")
+    private BigDecimal bill;
 
     public Long getId() {
         return id;
@@ -102,12 +102,12 @@ public class Order {
         this.email = email;
     }
 
-    public int getPhonenumber() {
-        return phonenumber;
+    public int getPhoneNumber() {
+        return phoneNumber;
     }
 
-    public void setPhonenumber(int phonenumber) {
-        this.phonenumber = phonenumber;
+    public void setPhoneNumber(int phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     public String getTitle() {
@@ -118,14 +118,6 @@ public class Order {
         this.title = title;
     }
 
-    public BigDecimal getBill() {
-        return bill;
-    }
-
-    public void setBill(BigDecimal bill) {
-        this.bill = bill;
-    }
-
     public String getCategory() {
         return category;
     }
@@ -134,22 +126,33 @@ public class Order {
         this.category = category;
     }
 
+    public BigDecimal getBill() {
+        return bill;
+    }
+
+    public void setBill(BigDecimal bill) {
+        this.bill = bill;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Order order = (Order) o;
-        return phonenumber == order.phonenumber && Objects.equals(id, order.id) && Objects.equals(name, order.name) && Objects.equals(surname, order.surname) && Objects.equals(street, order.street) && Objects.equals(city, order.city) && Objects.equals(postalAddress, order.postalAddress) && Objects.equals(email, order.email) && Objects.equals(title, order.title) && Objects.equals(bill, order.bill) && Objects.equals(category, order.category);
+        return phoneNumber == order.phoneNumber && Objects.equals(id, order.id) && Objects.equals(name, order.name) && Objects.equals(surname, order.surname) && Objects.equals(street, order.street) && Objects.equals(city, order.city) && Objects.equals(postalAddress, order.postalAddress) && Objects.equals(email, order.email) && Objects.equals(title, order.title) && Objects.equals(category, order.category) && Objects.equals(bill, order.bill);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, surname, street, city, postalAddress, email, phonenumber, title, bill, category);
+        return Objects.hash(id, name, surname, street, city, postalAddress, email, phoneNumber, title, category, bill);
     }
+
+
+    //contains %N N, любое число чего либо
 
     @Override
     public String toString() {
-        return String.format("Customer: id - %d, name -%s, surname -%s, street -%s, city -%s, postal address -%s, email - %s, phonenumber - %d, title - %s, bill -%s, category -%s", id, name,surname, street, city, postalAddress,email, phonenumber, title, bill, category);
+        return String.format("Customer: id - %d, name -%s, surname -%s, street -%s, city -%s, postalAddress -%s, email - %s, phoneNumber - %d, contains %s title, contains %s category, bill -%s", id, name, surname, street, city, postalAddress, email, phoneNumber, title, category, bill);
     }
 
 }
