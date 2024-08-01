@@ -1,8 +1,10 @@
 
 package com.kozak_burger.KozakBurgerShop.service;
+import com.kozak_burger.KozakBurgerShop.domain.dto.ProductDto;
 import com.kozak_burger.KozakBurgerShop.domain.entity.Product;
 import com.kozak_burger.KozakBurgerShop.repository.ProductRepository;
 import com.kozak_burger.KozakBurgerShop.service.interfaces.ProductService;
+import com.kozak_burger.KozakBurgerShop.service.mapping.ProductMappingService;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -13,22 +15,24 @@ public class ProductServiceImpl implements ProductService {
 
 
     private final ProductRepository repository;
+    private final ProductMappingService mappingService;
 
-    public ProductServiceImpl(ProductRepository repository) {
+    public ProductServiceImpl(ProductRepository repository, ProductMappingService mappingService) {
         this.repository = repository;
+        this.mappingService = mappingService;
     }
 
 
     @Override
-    public Product save(Product product) {
-        product.setId(null); //невозможно ид поменять
-        product.setActive(true);
-        return repository.save(product);
+    public ProductDto save(ProductDto dto) {
+        Product entity = mappingService.mapDtoToEntity(dto);
+        repository.save(entity);
+        return  mappingService.mapEntityToDto(entity);
     }
 
     @Override
-    public List<Product> getAllActiveProducts() {
-        return repository.findAll().stream().filter(Product::isActive).toList();
+    public List<ProductDto> getAllActiveProducts() {
+        return repository.findAll().stream().filter(Product::isActive).map(mappingService::mapEntityToDto).toList();
         }
 
         // List<Product> products = repository.findAll();
@@ -36,7 +40,7 @@ public class ProductServiceImpl implements ProductService {
         // while (iterator.hasNext()) { if (!iterator.next().isActive()) { iterator.remove(); }}
 
     @Override
-    public Product getById(Long id) {
+    public ProductDto getById(Long id) {
         Product product = repository.findById(id).orElse(null);
 
         if (product == null || !product.isActive()) {
@@ -44,11 +48,11 @@ public class ProductServiceImpl implements ProductService {
 
         }
 
-        return product;
+        return mappingService.mapEntityToDto(product);
     }
 
     @Override
-    public Product update(Product product) {
+    public ProductDto update(ProductDto product) {
         return null;
     }
 

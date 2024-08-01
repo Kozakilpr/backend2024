@@ -5,7 +5,7 @@ import java.util.Objects;
 
 
 
-//y@Entity
+//@Entity
 @Table(name = "customer")
 public class Customer {
 
