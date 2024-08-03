@@ -1,10 +1,9 @@
 
-
 package com.kozak_burger.KozakBurgerShop.domain.entity;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.*;
-
 import java.util.Objects;
 
 @Entity

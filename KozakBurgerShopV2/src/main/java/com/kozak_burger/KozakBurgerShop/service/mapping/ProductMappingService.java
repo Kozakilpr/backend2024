@@ -1,5 +1,6 @@
 
 package com.kozak_burger.KozakBurgerShop.service.mapping;
+
 import com.kozak_burger.KozakBurgerShop.domain.dto.ProductDto;
 import com.kozak_burger.KozakBurgerShop.domain.entity.Product;
 import org.mapstruct.Mapper;

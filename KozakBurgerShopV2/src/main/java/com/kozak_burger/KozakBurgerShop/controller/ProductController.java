@@ -1,4 +1,6 @@
+
 package com.kozak_burger.KozakBurgerShop.controller;
+
 import com.kozak_burger.KozakBurgerShop.domain.dto.ProductDto;
 import com.kozak_burger.KozakBurgerShop.domain.entity.Product;
 import com.kozak_burger.KozakBurgerShop.service.interfaces.ProductService;
@@ -8,7 +10,7 @@ import java.math.BigDecimal;
 import java.util.List;
 
 @RestController
-@RequestMapping("/product")
+@RequestMapping("/products")
 public class ProductController {
 
     private ProductService service;
@@ -24,15 +26,30 @@ public class ProductController {
     return service.save(product);
     }
 
-    @GetMapping
-    public List<ProductDto> get(@RequestParam(required = false) Long id) {
-        if (id == null) {
-           return service.getAllActiveProducts();
-        } else {
-            ProductDto product = service.getById(id);
-            return product == null ? null : List.of(product);
-        }
+    //уровни доступа
 
+
+//    @GetMapping
+//    public List<ProductDto> get(@RequestParam(required = false) Long id) {
+//        if (id == null) {
+//           return service.getAllActiveProducts();
+//        } else {
+//            ProductDto product = service.getById(id);
+//            return product == null ? null : List.of(product);
+//        }
+//
+//    }
+
+    @GetMapping
+    public ProductDto getById(@RequestParam Long id) {
+        return service.getById(id);
+
+
+    }
+
+    @GetMapping("/all")
+    public List<ProductDto> getAll() {
+        return service.getAllActiveProducts();
     }
 
     @PutMapping

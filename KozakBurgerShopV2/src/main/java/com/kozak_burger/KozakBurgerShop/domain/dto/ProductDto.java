@@ -1,7 +1,7 @@
+
 package com.kozak_burger.KozakBurgerShop.domain.dto;
 
-import jakarta.persistence.Column;
-
+//import jakarta.persistence.Column;
 import java.math.BigDecimal;
 import java.util.Objects;
 

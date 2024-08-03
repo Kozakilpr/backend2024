@@ -1,11 +1,14 @@
+
 package com.kozak_burger.KozakBurgerShop.domain.entity;
 
 import jakarta.persistence.*;
+import org.hibernate.annotations.JdbcTypeCode;
+import org.hibernate.type.SqlTypes;
 
 import java.util.List;
 import java.util.Objects;
 
-// @Entity
+//@Entity
 @Table(name = "cart")
 public class Cart {
 
@@ -14,9 +17,12 @@ public class Cart {
     @Column(name = "id")
     private Long id;
 
+
     private Customer customer;
 
+    //@JdbcTypeCode(SqlTypes.JSON)
     private List<Product> products;
+
 
     public Long getId() {
         return id;

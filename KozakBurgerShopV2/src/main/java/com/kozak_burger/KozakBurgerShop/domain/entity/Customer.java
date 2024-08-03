@@ -5,8 +5,8 @@ import java.util.Objects;
 
 
 
-//@Entity
-@Table(name = "customer")
+@Entity
+@Table(name = "сustomer")
 public class Customer {
 
     //Нужно решить что и куда переложить
@@ -40,7 +40,7 @@ public class Customer {
     @Column(name = "active")
     private boolean active;
 
-    private Cart cart;
+    //private Cart cart;
 
     public Long getId() {
         return id;
@@ -114,30 +114,30 @@ public class Customer {
         this.active = active;
     }
 
-    public Cart getCart() {
-        return cart;
-    }
-
-    public void setCart(Cart cart) {
-        this.cart = cart;
-    }
+//    public Cart getCart() {
+//        return cart;
+//    }
+//
+//    public void setCart(Cart cart) {
+//        this.cart = cart;
+//    }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Customer customer = (Customer) o;
-        return phoneNumber == customer.phoneNumber && active == customer.active && Objects.equals(id, customer.id) && Objects.equals(name, customer.name) && Objects.equals(surname, customer.surname) && Objects.equals(street, customer.street) && Objects.equals(city, customer.city) && Objects.equals(postalAddress, customer.postalAddress) && Objects.equals(email, customer.email) && Objects.equals(cart, customer.cart);
+        return phoneNumber == customer.phoneNumber && active == customer.active && Objects.equals(id, customer.id) && Objects.equals(name, customer.name) && Objects.equals(surname, customer.surname) && Objects.equals(street, customer.street) && Objects.equals(city, customer.city) && Objects.equals(postalAddress, customer.postalAddress) && Objects.equals(email, customer.email);
     }
-
+//&& Objects.equals(cart, customer.cart
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, surname, street, city, postalAddress, email, phoneNumber, active, cart);
+        return Objects.hash(id, name, surname, street, city, postalAddress, email, phoneNumber, active);
     }
-
+    //, cart
     @Override
     public String toString() {
-        return String.format("Customer: id - %d, name -%s, surname -%s, street -%s, city -%s, postalAddress -%s, email - %s, phoneNumber - %d, active - %s, cart - %s", id, name, surname, street, city, postalAddress, email, phoneNumber, active ? "yes" : "no", cart == null ? "ERROR! Cart is missing" : cart);
+        return String.format("Customer: id - %d, name -%s, surname -%s, street -%s, city -%s, postalAddress -%s, email - %s, phoneNumber - %d, active - %s", id, name, surname, street, city, postalAddress, email, phoneNumber, active ? "yes" : "no");
     }
-
+//cart - %s  , cart == null ? "ERROR! Cart is missing" : cart
 }
