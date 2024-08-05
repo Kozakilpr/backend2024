@@ -14,6 +14,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
+
 @Configuration
 @EnableWebSecurity
 @EnableMethodSecurity
@@ -37,14 +38,15 @@ public class SecurityConfig {
                 .csrf(AbstractHttpConfigurer::disable)
                 .sessionManagement(x -> x
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-                        .httpBasic(AbstractHttpConfigurer::disable)
-
-//             .httpBasic(Customizer.withDefaults())
-               .authorizeHttpRequests(x -> x
-                        .requestMatchers(HttpMethod.GET, "/products/all").permitAll()
-                        .requestMatchers(HttpMethod.GET, "/products").hasAnyRole("ADMIN", "USER")
-                        .requestMatchers(HttpMethod.POST, "/products").hasRole("ADMIN")
-                )
+                .httpBasic(AbstractHttpConfigurer::disable)
+//              .httpBasic(Customizer.withDefaults())
+                .authorizeHttpRequests(x -> x
+                       .requestMatchers(HttpMethod.GET, "/products/all").permitAll()
+                       .requestMatchers(HttpMethod.GET, "/products").hasAnyRole("ADMIN", "USER")
+                       .requestMatchers(HttpMethod.POST, "/products").hasRole("ADMIN")
+                       .requestMatchers(HttpMethod.POST, "/auth/login", "/auth/refresh").permitAll()
+//                       .anyRequest().permitAll()
+               )
                 .addFilterAfter(filter, UsernamePasswordAuthenticationFilter.class)
                 .build();
     }

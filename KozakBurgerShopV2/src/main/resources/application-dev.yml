@@ -2,9 +2,9 @@ spring:
   application:
     name: KozakBurgerShop
   datasource:
-    url: jdbc:postgresql://${DB_HOST}:${DB_PORT}/${DB_NAME}
-    username: ${DB_USERNAME}
-    password: ${DB_PASSWORD}
+    url: jdbc:postgresql://localhost:5432/KozakTest2
+    username: postgres
+    password: 1234
     driver-class-name: org.postgresql.Driver
   liquibase:
     change-log: classpath:db/changelog/db.changelog-master.xml
@@ -17,7 +17,12 @@ key:
   access: wwm4cDfkCrzh5QRu5/xGR6n4xqsaKVGFmI/Cyk6sp2A=
   refresh: nxGGtCBgMnAmIweXFTkaU1dPl0IsfitxRnmyxasDQlY=
 
+logging:
+  file:
+    name: logs/logfile.log
+  level:
+    root: info
 
 
 messages:
-  hello: Hello from digital ocean!
+  hello: Hello from local application!

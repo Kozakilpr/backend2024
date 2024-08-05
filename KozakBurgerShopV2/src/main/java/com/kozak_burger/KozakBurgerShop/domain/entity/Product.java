@@ -1,6 +1,8 @@
 
 package com.kozak_burger.KozakBurgerShop.domain.entity;
+
 import jakarta.persistence.*;
+import jakarta.validation.constraints.*;
 
 import java.math.BigDecimal;
 import java.util.Objects;
@@ -14,9 +16,17 @@ public class Product {
     @Column(name = "id")
     private Long id;
 
+    @NotNull(message = "Die Bezeichnung kann nicht leer sein")
+    @NotBlank(message = "Bitte geben Sie dem Produkt einen Namen")
+    @Pattern(
+            regexp = "[A-Z][a-z ]{2,}",
+            message = "Bezeichnung von Produkt, sollte nicht kürzer als 3 Zeichen sein! " + " Die Bezeichnung soll mit Großbuchstaben beginnen!"
+    )
     @Column(name = "title")
     private String title;
 
+    @DecimalMin(value = "0.25", message = "Der Preis darf nicht weniger als 25 Cent betragen")
+    @DecimalMax(value = "200.00", message = "Der Preis für ein Produkt, darf nicht mehr als 200 Euro sein")
     @Column(name = "price")
     private BigDecimal price;
 
@@ -114,7 +124,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return String.format("Product: id - %d, title - %s, price - %s, active - %s, description -%s, category - %s, rate -%d, image - %s", id, title, price, active ? "yes" : "no", description, category, rate, image);
+        return String.format("Product: id - %d, title - %s, price - %s, image - %s, description -%s, category - %s, rate -%d, active - %s", id, title, price, image, description, category, rate, active ? "yes" : "no");
     }
 
     //    @Override

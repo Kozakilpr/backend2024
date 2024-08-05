@@ -1,4 +1,3 @@
-
 package com.kozak_burger.KozakBurgerShop.service;
 
 import com.kozak_burger.KozakBurgerShop.domain.entity.User;

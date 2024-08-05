@@ -1,5 +1,5 @@
-
 package com.kozak_burger.KozakBurgerShop.domain.entity;
+
 import jakarta.persistence.*;
 import java.util.Objects;
 
@@ -40,7 +40,7 @@ public class Customer {
     @Column(name = "active")
     private boolean active;
 
-    //private Cart cart;
+   // private Cart cart;
 
     public Long getId() {
         return id;

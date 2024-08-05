@@ -1,0 +1,1079 @@
+2024-08-05T01:45:41.498+02:00  INFO 13608 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : Starting KozakBurgerShopApplication using Java 17.0.12 with PID 13608 (C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2\target\classes started by WORKMACHINE in C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2)
+2024-08-05T01:45:41.503+02:00  INFO 13608 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T01:45:41.995+02:00  INFO 13608 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-05T01:45:42.034+02:00  INFO 13608 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 3 JPA repository interfaces.
+2024-08-05T01:45:42.441+02:00  INFO 13608 --- [KozakBurgerShop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-05T01:45:42.448+02:00  INFO 13608 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-05T01:45:42.448+02:00  INFO 13608 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05T01:45:42.487+02:00  INFO 13608 --- [KozakBurgerShop] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-05T01:45:42.487+02:00  INFO 13608 --- [KozakBurgerShop] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 958 ms
+2024-08-05T01:45:42.560+02:00  INFO 13608 --- [KozakBurgerShop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T01:45:42.790+02:00  INFO 13608 --- [KozakBurgerShop] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7b91d9f
+2024-08-05T01:45:42.792+02:00  INFO 13608 --- [KozakBurgerShop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T01:45:42.888+02:00  INFO 13608 --- [KozakBurgerShop] [main] liquibase.database                       : Set default schema name to public
+2024-08-05T01:45:43.287+02:00  INFO 13608 --- [KozakBurgerShop] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-05T01:45:43.316+02:00  INFO 13608 --- [KozakBurgerShop] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2024-08-05T01:45:43.317+02:00  INFO 13608 --- [KozakBurgerShop] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-05T01:45:43.322+02:00  INFO 13608 --- [KozakBurgerShop] [main] liquibase.util                           : UPDATE SUMMARY
+2024-08-05T01:45:43.322+02:00  INFO 13608 --- [KozakBurgerShop] [main] liquibase.util                           : Run:                          0
+2024-08-05T01:45:43.322+02:00  INFO 13608 --- [KozakBurgerShop] [main] liquibase.util                           : Previously run:               8
+2024-08-05T01:45:43.322+02:00  INFO 13608 --- [KozakBurgerShop] [main] liquibase.util                           : Filtered out:                 0
+2024-08-05T01:45:43.322+02:00  INFO 13608 --- [KozakBurgerShop] [main] liquibase.util                           : -------------------------------
+2024-08-05T01:45:43.322+02:00  INFO 13608 --- [KozakBurgerShop] [main] liquibase.util                           : Total change sets:            8
+2024-08-05T01:45:43.323+02:00  INFO 13608 --- [KozakBurgerShop] [main] liquibase.util                           : Update summary generated
+2024-08-05T01:45:43.338+02:00  INFO 13608 --- [KozakBurgerShop] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-08-05T01:45:43.339+02:00  INFO 13608 --- [KozakBurgerShop] [main] liquibase.command                        : Command execution complete
+2024-08-05T01:45:43.397+02:00  INFO 13608 --- [KozakBurgerShop] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-05T01:45:43.436+02:00  INFO 13608 --- [KozakBurgerShop] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-05T01:45:43.461+02:00  INFO 13608 --- [KozakBurgerShop] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-05T01:45:43.665+02:00  INFO 13608 --- [KozakBurgerShop] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-05T01:45:44.401+02:00  INFO 13608 --- [KozakBurgerShop] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-05T01:45:44.403+02:00  INFO 13608 --- [KozakBurgerShop] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T01:45:44.777+02:00  WARN 13608 --- [KozakBurgerShop] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-05T01:45:44.794+02:00  INFO 13608 --- [KozakBurgerShop] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2024-08-05T01:45:45.253+02:00  INFO 13608 --- [KozakBurgerShop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-05T01:45:45.260+02:00  INFO 13608 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : Started KozakBurgerShopApplication in 4.218 seconds (process running for 4.584)
+2024-08-05T01:45:51.768+02:00  INFO 13608 --- [KozakBurgerShop] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-05T01:45:51.768+02:00  INFO 13608 --- [KozakBurgerShop] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-05T01:45:51.769+02:00  INFO 13608 --- [KozakBurgerShop] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-05T01:47:38.058+02:00  INFO 13608 --- [KozakBurgerShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T01:47:38.060+02:00  INFO 13608 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T01:47:38.061+02:00  INFO 13608 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T01:50:23.997+02:00  INFO 22320 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : Starting KozakBurgerShopApplication using Java 17.0.12 with PID 22320 (C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2\target\classes started by WORKMACHINE in C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2)
+2024-08-05T01:50:23.999+02:00  INFO 22320 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T01:50:24.512+02:00  INFO 22320 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-05T01:50:24.555+02:00  INFO 22320 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 3 JPA repository interfaces.
+2024-08-05T01:50:24.984+02:00  INFO 22320 --- [KozakBurgerShop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-05T01:50:24.991+02:00  INFO 22320 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-05T01:50:24.991+02:00  INFO 22320 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05T01:50:25.030+02:00  INFO 22320 --- [KozakBurgerShop] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-05T01:50:25.031+02:00  INFO 22320 --- [KozakBurgerShop] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1004 ms
+2024-08-05T01:50:25.106+02:00  INFO 22320 --- [KozakBurgerShop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T01:50:25.317+02:00  INFO 22320 --- [KozakBurgerShop] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@b5d9f1e
+2024-08-05T01:50:25.319+02:00  INFO 22320 --- [KozakBurgerShop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T01:50:25.404+02:00  INFO 22320 --- [KozakBurgerShop] [main] liquibase.database                       : Set default schema name to public
+2024-08-05T01:50:25.736+02:00  INFO 22320 --- [KozakBurgerShop] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-05T01:50:25.762+02:00  INFO 22320 --- [KozakBurgerShop] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2024-08-05T01:50:25.763+02:00  INFO 22320 --- [KozakBurgerShop] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-05T01:50:25.768+02:00  INFO 22320 --- [KozakBurgerShop] [main] liquibase.util                           : UPDATE SUMMARY
+2024-08-05T01:50:25.768+02:00  INFO 22320 --- [KozakBurgerShop] [main] liquibase.util                           : Run:                          0
+2024-08-05T01:50:25.768+02:00  INFO 22320 --- [KozakBurgerShop] [main] liquibase.util                           : Previously run:               8
+2024-08-05T01:50:25.768+02:00  INFO 22320 --- [KozakBurgerShop] [main] liquibase.util                           : Filtered out:                 0
+2024-08-05T01:50:25.768+02:00  INFO 22320 --- [KozakBurgerShop] [main] liquibase.util                           : -------------------------------
+2024-08-05T01:50:25.768+02:00  INFO 22320 --- [KozakBurgerShop] [main] liquibase.util                           : Total change sets:            8
+2024-08-05T01:50:25.769+02:00  INFO 22320 --- [KozakBurgerShop] [main] liquibase.util                           : Update summary generated
+2024-08-05T01:50:25.782+02:00  INFO 22320 --- [KozakBurgerShop] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-08-05T01:50:25.784+02:00  INFO 22320 --- [KozakBurgerShop] [main] liquibase.command                        : Command execution complete
+2024-08-05T01:50:25.837+02:00  INFO 22320 --- [KozakBurgerShop] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-05T01:50:25.874+02:00  INFO 22320 --- [KozakBurgerShop] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-05T01:50:25.895+02:00  INFO 22320 --- [KozakBurgerShop] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-05T01:50:26.094+02:00  INFO 22320 --- [KozakBurgerShop] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-05T01:50:26.762+02:00  INFO 22320 --- [KozakBurgerShop] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-05T01:50:26.764+02:00  INFO 22320 --- [KozakBurgerShop] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T01:50:27.134+02:00  WARN 22320 --- [KozakBurgerShop] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-05T01:50:27.156+02:00  INFO 22320 --- [KozakBurgerShop] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2024-08-05T01:50:27.599+02:00  INFO 22320 --- [KozakBurgerShop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-05T01:50:27.607+02:00  INFO 22320 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : Started KozakBurgerShopApplication in 3.911 seconds (process running for 4.283)
+2024-08-05T01:50:41.654+02:00  INFO 22320 --- [KozakBurgerShop] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-05T01:50:41.655+02:00  INFO 22320 --- [KozakBurgerShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-05T01:50:41.656+02:00  INFO 22320 --- [KozakBurgerShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-05T01:51:05.189+02:00  INFO 22320 --- [KozakBurgerShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T01:51:05.190+02:00  INFO 22320 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T01:51:05.192+02:00  INFO 22320 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T01:51:08.385+02:00  INFO 14148 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : Starting KozakBurgerShopApplication using Java 17.0.12 with PID 14148 (C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2\target\classes started by WORKMACHINE in C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2)
+2024-08-05T01:51:08.387+02:00  INFO 14148 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T01:51:08.924+02:00  INFO 14148 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-05T01:51:08.966+02:00  INFO 14148 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 3 JPA repository interfaces.
+2024-08-05T01:51:09.407+02:00  INFO 14148 --- [KozakBurgerShop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-05T01:51:09.415+02:00  INFO 14148 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-05T01:51:09.415+02:00  INFO 14148 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05T01:51:09.461+02:00  INFO 14148 --- [KozakBurgerShop] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-05T01:51:09.462+02:00  INFO 14148 --- [KozakBurgerShop] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1049 ms
+2024-08-05T01:51:09.546+02:00  INFO 14148 --- [KozakBurgerShop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T01:51:09.681+02:00  INFO 14148 --- [KozakBurgerShop] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@566c1e71
+2024-08-05T01:51:09.683+02:00  INFO 14148 --- [KozakBurgerShop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T01:51:09.782+02:00  INFO 14148 --- [KozakBurgerShop] [main] liquibase.database                       : Set default schema name to public
+2024-08-05T01:51:10.187+02:00  INFO 14148 --- [KozakBurgerShop] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-05T01:51:10.220+02:00  INFO 14148 --- [KozakBurgerShop] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2024-08-05T01:51:10.221+02:00  INFO 14148 --- [KozakBurgerShop] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-05T01:51:10.227+02:00  INFO 14148 --- [KozakBurgerShop] [main] liquibase.util                           : UPDATE SUMMARY
+2024-08-05T01:51:10.228+02:00  INFO 14148 --- [KozakBurgerShop] [main] liquibase.util                           : Run:                          0
+2024-08-05T01:51:10.228+02:00  INFO 14148 --- [KozakBurgerShop] [main] liquibase.util                           : Previously run:               8
+2024-08-05T01:51:10.228+02:00  INFO 14148 --- [KozakBurgerShop] [main] liquibase.util                           : Filtered out:                 0
+2024-08-05T01:51:10.228+02:00  INFO 14148 --- [KozakBurgerShop] [main] liquibase.util                           : -------------------------------
+2024-08-05T01:51:10.228+02:00  INFO 14148 --- [KozakBurgerShop] [main] liquibase.util                           : Total change sets:            8
+2024-08-05T01:51:10.229+02:00  INFO 14148 --- [KozakBurgerShop] [main] liquibase.util                           : Update summary generated
+2024-08-05T01:51:10.245+02:00  INFO 14148 --- [KozakBurgerShop] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-08-05T01:51:10.246+02:00  INFO 14148 --- [KozakBurgerShop] [main] liquibase.command                        : Command execution complete
+2024-08-05T01:51:10.316+02:00  INFO 14148 --- [KozakBurgerShop] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-05T01:51:10.356+02:00  INFO 14148 --- [KozakBurgerShop] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-05T01:51:10.380+02:00  INFO 14148 --- [KozakBurgerShop] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-05T01:51:10.597+02:00  INFO 14148 --- [KozakBurgerShop] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-05T01:51:11.370+02:00  INFO 14148 --- [KozakBurgerShop] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-05T01:51:11.372+02:00  INFO 14148 --- [KozakBurgerShop] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T01:51:11.749+02:00  WARN 14148 --- [KozakBurgerShop] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-05T01:51:11.768+02:00  INFO 14148 --- [KozakBurgerShop] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2024-08-05T01:51:12.201+02:00  INFO 14148 --- [KozakBurgerShop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-05T01:51:12.208+02:00  INFO 14148 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : Started KozakBurgerShopApplication in 4.142 seconds (process running for 4.505)
+2024-08-05T01:51:14.601+02:00  INFO 14148 --- [KozakBurgerShop] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-05T01:51:14.602+02:00  INFO 14148 --- [KozakBurgerShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-05T01:51:14.603+02:00  INFO 14148 --- [KozakBurgerShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-05T01:51:20.256+02:00  INFO 14148 --- [KozakBurgerShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T01:51:20.258+02:00  INFO 14148 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T01:51:20.259+02:00  INFO 14148 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T01:53:05.561+02:00  INFO 25552 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : Starting KozakBurgerShopApplication using Java 17.0.12 with PID 25552 (C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2\target\classes started by WORKMACHINE in C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2)
+2024-08-05T01:53:05.563+02:00  INFO 25552 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T01:53:06.051+02:00  INFO 25552 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-05T01:53:06.090+02:00  INFO 25552 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 3 JPA repository interfaces.
+2024-08-05T01:53:06.498+02:00  INFO 25552 --- [KozakBurgerShop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-05T01:53:06.506+02:00  INFO 25552 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-05T01:53:06.507+02:00  INFO 25552 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05T01:53:06.545+02:00  INFO 25552 --- [KozakBurgerShop] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-05T01:53:06.545+02:00  INFO 25552 --- [KozakBurgerShop] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 956 ms
+2024-08-05T01:53:06.616+02:00  INFO 25552 --- [KozakBurgerShop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T01:53:06.724+02:00  INFO 25552 --- [KozakBurgerShop] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1201769d
+2024-08-05T01:53:06.726+02:00  INFO 25552 --- [KozakBurgerShop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T01:53:06.812+02:00  INFO 25552 --- [KozakBurgerShop] [main] liquibase.database                       : Set default schema name to public
+2024-08-05T01:53:07.142+02:00  INFO 25552 --- [KozakBurgerShop] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-05T01:53:07.169+02:00  INFO 25552 --- [KozakBurgerShop] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2024-08-05T01:53:07.170+02:00  INFO 25552 --- [KozakBurgerShop] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-05T01:53:07.175+02:00  INFO 25552 --- [KozakBurgerShop] [main] liquibase.util                           : UPDATE SUMMARY
+2024-08-05T01:53:07.175+02:00  INFO 25552 --- [KozakBurgerShop] [main] liquibase.util                           : Run:                          0
+2024-08-05T01:53:07.175+02:00  INFO 25552 --- [KozakBurgerShop] [main] liquibase.util                           : Previously run:               8
+2024-08-05T01:53:07.175+02:00  INFO 25552 --- [KozakBurgerShop] [main] liquibase.util                           : Filtered out:                 0
+2024-08-05T01:53:07.175+02:00  INFO 25552 --- [KozakBurgerShop] [main] liquibase.util                           : -------------------------------
+2024-08-05T01:53:07.175+02:00  INFO 25552 --- [KozakBurgerShop] [main] liquibase.util                           : Total change sets:            8
+2024-08-05T01:53:07.176+02:00  INFO 25552 --- [KozakBurgerShop] [main] liquibase.util                           : Update summary generated
+2024-08-05T01:53:07.190+02:00  INFO 25552 --- [KozakBurgerShop] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-08-05T01:53:07.191+02:00  INFO 25552 --- [KozakBurgerShop] [main] liquibase.command                        : Command execution complete
+2024-08-05T01:53:07.245+02:00  INFO 25552 --- [KozakBurgerShop] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-05T01:53:07.278+02:00  INFO 25552 --- [KozakBurgerShop] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-05T01:53:07.300+02:00  INFO 25552 --- [KozakBurgerShop] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-05T01:53:07.497+02:00  INFO 25552 --- [KozakBurgerShop] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-05T01:53:08.180+02:00  INFO 25552 --- [KozakBurgerShop] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-05T01:53:08.182+02:00  INFO 25552 --- [KozakBurgerShop] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T01:53:08.553+02:00  WARN 25552 --- [KozakBurgerShop] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-05T01:53:08.570+02:00  INFO 25552 --- [KozakBurgerShop] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2024-08-05T01:53:09.014+02:00  INFO 25552 --- [KozakBurgerShop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-05T01:53:09.021+02:00  INFO 25552 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : Started KozakBurgerShopApplication in 3.762 seconds (process running for 4.099)
+2024-08-05T01:53:19.537+02:00  INFO 25552 --- [KozakBurgerShop] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-05T01:53:19.538+02:00  INFO 25552 --- [KozakBurgerShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-05T01:53:19.538+02:00  INFO 25552 --- [KozakBurgerShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-08-05T01:53:19.620+02:00  INFO 25552 --- [KozakBurgerShop] [http-nio-8080-exec-1] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl with parameter [FAILED toString()]
+2024-08-05T01:53:19.667+02:00  WARN 25552 --- [KozakBurgerShop] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2024-08-05T01:53:19.667+02:00 ERROR 25552 --- [KozakBurgerShop] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : FEHLER: doppelter Schlüsselwert verletzt Unique-Constraint »product_pkey«
+  Detail: Schlüssel »(id)=(1)« existiert bereits.
+2024-08-05T01:53:19.674+02:00  INFO 25552 --- [KozakBurgerShop] [http-nio-8080-exec-1] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl finished its work
+2024-08-05T01:54:12.856+02:00  INFO 25552 --- [KozakBurgerShop] [http-nio-8080-exec-5] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl with parameter [FAILED toString()]
+2024-08-05T01:54:12.882+02:00  INFO 25552 --- [KozakBurgerShop] [http-nio-8080-exec-5] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl finished its work
+2024-08-05T01:54:19.765+02:00  WARN 25552 --- [KozakBurgerShop] [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type Long is not present]
+2024-08-05T01:55:05.203+02:00  INFO 25552 --- [KozakBurgerShop] [http-nio-8080-exec-6] c.k.K.domain.logging.AspectLogging       : Method getById called in ProductServiceImpl returned result
+2024-08-05T01:55:13.212+02:00  WARN 25552 --- [KozakBurgerShop] [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type Long is not present]
+2024-08-05T01:56:13.129+02:00  INFO 25552 --- [KozakBurgerShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T01:56:13.131+02:00  INFO 25552 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T01:56:13.132+02:00  INFO 25552 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T01:56:15.869+02:00  INFO 15432 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : Starting KozakBurgerShopApplication using Java 17.0.12 with PID 15432 (C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2\target\classes started by WORKMACHINE in C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2)
+2024-08-05T01:56:15.871+02:00  INFO 15432 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T01:56:16.371+02:00  INFO 15432 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-05T01:56:16.412+02:00  INFO 15432 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 3 JPA repository interfaces.
+2024-08-05T01:56:16.819+02:00  INFO 15432 --- [KozakBurgerShop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-05T01:56:16.826+02:00  INFO 15432 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-05T01:56:16.826+02:00  INFO 15432 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05T01:56:16.863+02:00  INFO 15432 --- [KozakBurgerShop] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-05T01:56:16.864+02:00  INFO 15432 --- [KozakBurgerShop] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 967 ms
+2024-08-05T01:56:16.935+02:00  INFO 15432 --- [KozakBurgerShop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T01:56:17.046+02:00  INFO 15432 --- [KozakBurgerShop] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5618fc1f
+2024-08-05T01:56:17.048+02:00  INFO 15432 --- [KozakBurgerShop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T01:56:17.139+02:00  INFO 15432 --- [KozakBurgerShop] [main] liquibase.database                       : Set default schema name to public
+2024-08-05T01:56:17.480+02:00  INFO 15432 --- [KozakBurgerShop] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-05T01:56:17.505+02:00  INFO 15432 --- [KozakBurgerShop] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2024-08-05T01:56:17.506+02:00  INFO 15432 --- [KozakBurgerShop] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-05T01:56:17.511+02:00  INFO 15432 --- [KozakBurgerShop] [main] liquibase.util                           : UPDATE SUMMARY
+2024-08-05T01:56:17.511+02:00  INFO 15432 --- [KozakBurgerShop] [main] liquibase.util                           : Run:                          0
+2024-08-05T01:56:17.511+02:00  INFO 15432 --- [KozakBurgerShop] [main] liquibase.util                           : Previously run:               8
+2024-08-05T01:56:17.511+02:00  INFO 15432 --- [KozakBurgerShop] [main] liquibase.util                           : Filtered out:                 0
+2024-08-05T01:56:17.511+02:00  INFO 15432 --- [KozakBurgerShop] [main] liquibase.util                           : -------------------------------
+2024-08-05T01:56:17.511+02:00  INFO 15432 --- [KozakBurgerShop] [main] liquibase.util                           : Total change sets:            8
+2024-08-05T01:56:17.512+02:00  INFO 15432 --- [KozakBurgerShop] [main] liquibase.util                           : Update summary generated
+2024-08-05T01:56:17.526+02:00  INFO 15432 --- [KozakBurgerShop] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-08-05T01:56:17.527+02:00  INFO 15432 --- [KozakBurgerShop] [main] liquibase.command                        : Command execution complete
+2024-08-05T01:56:17.581+02:00  INFO 15432 --- [KozakBurgerShop] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-05T01:56:17.613+02:00  INFO 15432 --- [KozakBurgerShop] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-05T01:56:17.637+02:00  INFO 15432 --- [KozakBurgerShop] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-05T01:56:17.840+02:00  INFO 15432 --- [KozakBurgerShop] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-05T01:56:18.506+02:00  INFO 15432 --- [KozakBurgerShop] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-05T01:56:18.508+02:00  INFO 15432 --- [KozakBurgerShop] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T01:56:18.861+02:00  WARN 15432 --- [KozakBurgerShop] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-05T01:56:18.879+02:00  INFO 15432 --- [KozakBurgerShop] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2024-08-05T01:56:19.309+02:00  INFO 15432 --- [KozakBurgerShop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-05T01:56:19.316+02:00  INFO 15432 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : Started KozakBurgerShopApplication in 3.761 seconds (process running for 4.157)
+2024-08-05T01:56:28.586+02:00  INFO 15432 --- [KozakBurgerShop] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-05T01:56:28.586+02:00  INFO 15432 --- [KozakBurgerShop] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-05T01:56:28.587+02:00  INFO 15432 --- [KozakBurgerShop] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-05T01:56:28.671+02:00  INFO 15432 --- [KozakBurgerShop] [http-nio-8080-exec-2] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl with parameter [FAILED toString()]
+2024-08-05T01:56:28.717+02:00  WARN 15432 --- [KozakBurgerShop] [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 42P01
+2024-08-05T01:56:28.718+02:00 ERROR 15432 --- [KozakBurgerShop] [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : FEHLER: Relation »product« existiert nicht
+  Position: 13
+2024-08-05T01:56:28.724+02:00  INFO 15432 --- [KozakBurgerShop] [http-nio-8080-exec-2] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl finished its work
+2024-08-05T01:56:52.897+02:00  INFO 15432 --- [KozakBurgerShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T01:56:52.898+02:00  INFO 15432 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T01:56:52.900+02:00  INFO 15432 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T01:57:39.833+02:00  INFO 21356 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : Starting KozakBurgerShopApplication using Java 17.0.12 with PID 21356 (C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2\target\classes started by WORKMACHINE in C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2)
+2024-08-05T01:57:39.835+02:00  INFO 21356 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T01:57:40.346+02:00  INFO 21356 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-05T01:57:40.385+02:00  INFO 21356 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 3 JPA repository interfaces.
+2024-08-05T01:57:40.798+02:00  INFO 21356 --- [KozakBurgerShop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-05T01:57:40.805+02:00  INFO 21356 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-05T01:57:40.806+02:00  INFO 21356 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05T01:57:40.846+02:00  INFO 21356 --- [KozakBurgerShop] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-05T01:57:40.846+02:00  INFO 21356 --- [KozakBurgerShop] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 983 ms
+2024-08-05T01:57:40.919+02:00  INFO 21356 --- [KozakBurgerShop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T01:57:41.032+02:00  INFO 21356 --- [KozakBurgerShop] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@401317a0
+2024-08-05T01:57:41.033+02:00  INFO 21356 --- [KozakBurgerShop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T01:57:41.122+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.database                       : Set default schema name to public
+2024-08-05T01:57:41.439+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.changelog                      : Creating database history table with name: public.databasechangelog
+2024-08-05T01:57:41.467+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-05T01:57:41.523+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.lockservice                    : Changelog-Protokoll erfolgreich gesperrt.
+2024-08-05T01:57:41.524+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.command                        : Using deploymentId: 2815861523
+2024-08-05T01:57:41.525+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-05T01:57:41.536+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.ui                             : Running Changeset: db/changelog/v.0.1.1/changelog.xml::add-tag-0.1.1::Danil
+2024-08-05T01:57:41.538+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.changelog                      : Tag 'v.0.1.1' applied to database
+2024-08-05T01:57:41.539+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.changelog                      : ChangeSet db/changelog/v.0.1.1/changelog.xml::add-tag-0.1.1::Danil ran successfully in 2ms
+2024-08-05T01:57:41.542+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.ui                             : Running Changeset: db/changelog/v.0.1.1/create-table-product.xml::create-table-product::Danil
+2024-08-05T01:57:41.552+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.changelog                      : Table product created
+2024-08-05T01:57:41.553+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.changelog                      : ChangeSet db/changelog/v.0.1.1/create-table-product.xml::create-table-product::Danil ran successfully in 11ms
+2024-08-05T01:57:41.554+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.ui                             : Running Changeset: db/changelog/v.0.1.2/changelog.xml::add-tag-0.1.2::Danil
+2024-08-05T01:57:41.554+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.changelog                      : Tag 'v.0.1.2' applied to database
+2024-08-05T01:57:41.555+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.changelog                      : ChangeSet db/changelog/v.0.1.2/changelog.xml::add-tag-0.1.2::Danil ran successfully in 1ms
+2024-08-05T01:57:41.556+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.ui                             : Running Changeset: db/changelog/v.0.1.2/create-table-user.xml::create-table-user::Danil
+2024-08-05T01:57:41.563+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.changelog                      : Table user created
+2024-08-05T01:57:41.563+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.changelog                      : ChangeSet db/changelog/v.0.1.2/create-table-user.xml::create-table-user::Danil ran successfully in 6ms
+2024-08-05T01:57:41.565+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.ui                             : Running Changeset: db/changelog/v.0.1.2/create-table-role.xml::create-table-role::Danil
+2024-08-05T01:57:41.571+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.changelog                      : Table role created
+2024-08-05T01:57:41.571+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.changelog                      : ChangeSet db/changelog/v.0.1.2/create-table-role.xml::create-table-role::Danil ran successfully in 6ms
+2024-08-05T01:57:41.573+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.ui                             : Running Changeset: db/changelog/v.0.1.2/add-roles.xml::add-roles::Danil
+2024-08-05T01:57:41.575+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.changelog                      : New row inserted into role
+2024-08-05T01:57:41.576+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.changelog                      : New row inserted into role
+2024-08-05T01:57:41.576+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.changelog                      : ChangeSet db/changelog/v.0.1.2/add-roles.xml::add-roles::Danil ran successfully in 3ms
+2024-08-05T01:57:41.577+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.ui                             : Running Changeset: db/changelog/v.0.1.2/create-table-user-role.xml::create-table-user-role::Danil
+2024-08-05T01:57:41.582+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.changelog                      : Table user_role created
+2024-08-05T01:57:41.582+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.changelog                      : ChangeSet db/changelog/v.0.1.2/create-table-user-role.xml::create-table-user-role::Danil ran successfully in 4ms
+2024-08-05T01:57:41.584+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.ui                             : Running Changeset: db/changelog/v.0.1.2/add-foreign-keys-user-role.xml::add-foreign-keys-user-role::Danil
+2024-08-05T01:57:41.587+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.changelog                      : Foreign key constraint added to user_role (user_id)
+2024-08-05T01:57:41.589+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.changelog                      : Foreign key constraint added to user_role (role_id)
+2024-08-05T01:57:41.589+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.changelog                      : ChangeSet db/changelog/v.0.1.2/add-foreign-keys-user-role.xml::add-foreign-keys-user-role::Danil ran successfully in 5ms
+2024-08-05T01:57:41.593+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.util                           : UPDATE SUMMARY
+2024-08-05T01:57:41.594+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.util                           : Run:                          8
+2024-08-05T01:57:41.594+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.util                           : Previously run:               0
+2024-08-05T01:57:41.594+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.util                           : Filtered out:                 0
+2024-08-05T01:57:41.594+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.util                           : -------------------------------
+2024-08-05T01:57:41.594+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.util                           : Total change sets:            8
+2024-08-05T01:57:41.594+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.util                           : Update summary generated
+2024-08-05T01:57:41.596+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.command                        : Update command completed successfully.
+2024-08-05T01:57:41.596+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 10
+2024-08-05T01:57:41.597+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-08-05T01:57:41.598+02:00  INFO 21356 --- [KozakBurgerShop] [main] liquibase.command                        : Command execution complete
+2024-08-05T01:57:41.653+02:00  INFO 21356 --- [KozakBurgerShop] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-05T01:57:41.700+02:00  INFO 21356 --- [KozakBurgerShop] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-05T01:57:41.727+02:00  INFO 21356 --- [KozakBurgerShop] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-05T01:57:41.915+02:00  INFO 21356 --- [KozakBurgerShop] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-05T01:57:42.605+02:00  INFO 21356 --- [KozakBurgerShop] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-05T01:57:42.608+02:00  INFO 21356 --- [KozakBurgerShop] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T01:57:42.983+02:00  WARN 21356 --- [KozakBurgerShop] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-05T01:57:43.002+02:00  INFO 21356 --- [KozakBurgerShop] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2024-08-05T01:57:43.446+02:00  INFO 21356 --- [KozakBurgerShop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-05T01:57:43.453+02:00  INFO 21356 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : Started KozakBurgerShopApplication in 3.914 seconds (process running for 4.255)
+2024-08-05T01:59:30.656+02:00  INFO 21356 --- [KozakBurgerShop] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-05T01:59:30.657+02:00  INFO 21356 --- [KozakBurgerShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-05T01:59:30.658+02:00  INFO 21356 --- [KozakBurgerShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-05T01:59:30.735+02:00  INFO 21356 --- [KozakBurgerShop] [http-nio-8080-exec-1] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl with parameter [FAILED toString()]
+2024-08-05T01:59:30.795+02:00  INFO 21356 --- [KozakBurgerShop] [http-nio-8080-exec-1] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl finished its work
+2024-08-05T01:59:39.112+02:00  INFO 21356 --- [KozakBurgerShop] [http-nio-8080-exec-3] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl with parameter [FAILED toString()]
+2024-08-05T01:59:39.116+02:00  INFO 21356 --- [KozakBurgerShop] [http-nio-8080-exec-3] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl finished its work
+2024-08-05T01:59:53.877+02:00  WARN 21356 --- [KozakBurgerShop] [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type Long is not present]
+2024-08-05T02:00:01.201+02:00  WARN 21356 --- [KozakBurgerShop] [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type Long is not present]
+2024-08-05T02:00:35.351+02:00  WARN 21356 --- [KozakBurgerShop] [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type Long is not present]
+2024-08-05T02:03:56.295+02:00  INFO 21356 --- [KozakBurgerShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T02:03:56.297+02:00  INFO 21356 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T02:03:56.300+02:00  INFO 21356 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T02:08:52.290+02:00  INFO 11104 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : Starting KozakBurgerShopApplication using Java 17.0.12 with PID 11104 (C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2\target\classes started by WORKMACHINE in C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2)
+2024-08-05T02:08:52.292+02:00  INFO 11104 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T02:08:52.796+02:00  INFO 11104 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-05T02:08:52.835+02:00  INFO 11104 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 3 JPA repository interfaces.
+2024-08-05T02:08:53.245+02:00  INFO 11104 --- [KozakBurgerShop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-05T02:08:53.254+02:00  INFO 11104 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-05T02:08:53.254+02:00  INFO 11104 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05T02:08:53.295+02:00  INFO 11104 --- [KozakBurgerShop] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-05T02:08:53.295+02:00  INFO 11104 --- [KozakBurgerShop] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 979 ms
+2024-08-05T02:08:53.369+02:00  INFO 11104 --- [KozakBurgerShop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T02:08:53.484+02:00  INFO 11104 --- [KozakBurgerShop] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4607d78b
+2024-08-05T02:08:53.485+02:00  INFO 11104 --- [KozakBurgerShop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T02:08:53.586+02:00  INFO 11104 --- [KozakBurgerShop] [main] liquibase.database                       : Set default schema name to public
+2024-08-05T02:08:53.955+02:00  INFO 11104 --- [KozakBurgerShop] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-05T02:08:53.986+02:00  INFO 11104 --- [KozakBurgerShop] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2024-08-05T02:08:53.988+02:00  INFO 11104 --- [KozakBurgerShop] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-05T02:08:53.993+02:00  INFO 11104 --- [KozakBurgerShop] [main] liquibase.util                           : UPDATE SUMMARY
+2024-08-05T02:08:53.993+02:00  INFO 11104 --- [KozakBurgerShop] [main] liquibase.util                           : Run:                          0
+2024-08-05T02:08:53.993+02:00  INFO 11104 --- [KozakBurgerShop] [main] liquibase.util                           : Previously run:               8
+2024-08-05T02:08:53.993+02:00  INFO 11104 --- [KozakBurgerShop] [main] liquibase.util                           : Filtered out:                 0
+2024-08-05T02:08:53.993+02:00  INFO 11104 --- [KozakBurgerShop] [main] liquibase.util                           : -------------------------------
+2024-08-05T02:08:53.993+02:00  INFO 11104 --- [KozakBurgerShop] [main] liquibase.util                           : Total change sets:            8
+2024-08-05T02:08:53.993+02:00  INFO 11104 --- [KozakBurgerShop] [main] liquibase.util                           : Update summary generated
+2024-08-05T02:08:54.007+02:00  INFO 11104 --- [KozakBurgerShop] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-08-05T02:08:54.009+02:00  INFO 11104 --- [KozakBurgerShop] [main] liquibase.command                        : Command execution complete
+2024-08-05T02:08:54.073+02:00  INFO 11104 --- [KozakBurgerShop] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-05T02:08:54.111+02:00  INFO 11104 --- [KozakBurgerShop] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-05T02:08:54.134+02:00  INFO 11104 --- [KozakBurgerShop] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-05T02:08:54.338+02:00  INFO 11104 --- [KozakBurgerShop] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-05T02:08:55.006+02:00  INFO 11104 --- [KozakBurgerShop] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-05T02:08:55.008+02:00  INFO 11104 --- [KozakBurgerShop] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T02:08:55.352+02:00  WARN 11104 --- [KozakBurgerShop] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-05T02:08:55.370+02:00  INFO 11104 --- [KozakBurgerShop] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2024-08-05T02:08:55.787+02:00  INFO 11104 --- [KozakBurgerShop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-05T02:08:55.794+02:00  INFO 11104 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : Started KozakBurgerShopApplication in 3.787 seconds (process running for 4.134)
+2024-08-05T02:09:01.997+02:00  INFO 11104 --- [KozakBurgerShop] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-05T02:09:01.997+02:00  INFO 11104 --- [KozakBurgerShop] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-05T02:09:01.998+02:00  INFO 11104 --- [KozakBurgerShop] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-05T02:09:02.033+02:00  WARN 11104 --- [KozakBurgerShop] [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type Long is not present]
+2024-08-05T02:09:09.248+02:00  WARN 11104 --- [KozakBurgerShop] [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type Long is not present]
+2024-08-05T02:09:38.509+02:00  INFO 11104 --- [KozakBurgerShop] [http-nio-8080-exec-7] c.k.K.domain.logging.AspectLogging       : Method getById called in ProductServiceImpl threw an exception
+2024-08-05T02:09:38.510+02:00 ERROR 11104 --- [KozakBurgerShop] [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: Product not found] with root cause
+
+java.lang.RuntimeException: Product not found
+	at com.kozak_burger.KozakBurgerShop.service.ProductServiceImpl.getById(ProductServiceImpl.java:68) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.11.jar:6.1.11]
+	at com.kozak_burger.KozakBurgerShop.service.ProductServiceImpl$$SpringCGLIB$$0.getById(<generated>) ~[classes/:na]
+	at com.kozak_burger.KozakBurgerShop.controller.ProductController.getById(ProductController.java:46) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at com.kozak_burger.KozakBurgerShop.security.sec_filter.TokenFilter.doFilter(TokenFilter.java:42) ~[classes/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at com.kozak_burger.KozakBurgerShop.security.sec_filter.TokenFilter.doFilter(TokenFilter.java:42) ~[classes/:na]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-08-05T02:09:47.201+02:00  INFO 11104 --- [KozakBurgerShop] [http-nio-8080-exec-9] c.k.K.domain.logging.AspectLogging       : Method getById called in ProductServiceImpl returned result
+2024-08-05T02:09:50.194+02:00  INFO 11104 --- [KozakBurgerShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T02:09:50.195+02:00  INFO 11104 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T02:09:50.197+02:00  INFO 11104 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T02:16:17.899+02:00  INFO 7504 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : Starting KozakBurgerShopApplication using Java 17.0.12 with PID 7504 (C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2\target\classes started by WORKMACHINE in C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2)
+2024-08-05T02:16:17.901+02:00  INFO 7504 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T02:16:18.429+02:00  INFO 7504 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-05T02:16:18.468+02:00  INFO 7504 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 3 JPA repository interfaces.
+2024-08-05T02:16:18.885+02:00  INFO 7504 --- [KozakBurgerShop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-05T02:16:18.893+02:00  INFO 7504 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-05T02:16:18.893+02:00  INFO 7504 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05T02:16:18.934+02:00  INFO 7504 --- [KozakBurgerShop] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-05T02:16:18.934+02:00  INFO 7504 --- [KozakBurgerShop] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1005 ms
+2024-08-05T02:16:19.011+02:00  INFO 7504 --- [KozakBurgerShop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T02:16:19.222+02:00  INFO 7504 --- [KozakBurgerShop] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@b5d9f1e
+2024-08-05T02:16:19.223+02:00  INFO 7504 --- [KozakBurgerShop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T02:16:19.308+02:00  INFO 7504 --- [KozakBurgerShop] [main] liquibase.database                       : Set default schema name to public
+2024-08-05T02:16:19.658+02:00  INFO 7504 --- [KozakBurgerShop] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-05T02:16:19.686+02:00  INFO 7504 --- [KozakBurgerShop] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2024-08-05T02:16:19.687+02:00  INFO 7504 --- [KozakBurgerShop] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-05T02:16:19.694+02:00  INFO 7504 --- [KozakBurgerShop] [main] liquibase.util                           : UPDATE SUMMARY
+2024-08-05T02:16:19.694+02:00  INFO 7504 --- [KozakBurgerShop] [main] liquibase.util                           : Run:                          0
+2024-08-05T02:16:19.694+02:00  INFO 7504 --- [KozakBurgerShop] [main] liquibase.util                           : Previously run:               8
+2024-08-05T02:16:19.694+02:00  INFO 7504 --- [KozakBurgerShop] [main] liquibase.util                           : Filtered out:                 0
+2024-08-05T02:16:19.694+02:00  INFO 7504 --- [KozakBurgerShop] [main] liquibase.util                           : -------------------------------
+2024-08-05T02:16:19.694+02:00  INFO 7504 --- [KozakBurgerShop] [main] liquibase.util                           : Total change sets:            8
+2024-08-05T02:16:19.695+02:00  INFO 7504 --- [KozakBurgerShop] [main] liquibase.util                           : Update summary generated
+2024-08-05T02:16:19.711+02:00  INFO 7504 --- [KozakBurgerShop] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-08-05T02:16:19.712+02:00  INFO 7504 --- [KozakBurgerShop] [main] liquibase.command                        : Command execution complete
+2024-08-05T02:16:19.772+02:00  INFO 7504 --- [KozakBurgerShop] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-05T02:16:19.803+02:00  INFO 7504 --- [KozakBurgerShop] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-05T02:16:19.822+02:00  INFO 7504 --- [KozakBurgerShop] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-05T02:16:20.014+02:00  INFO 7504 --- [KozakBurgerShop] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-05T02:16:20.736+02:00  INFO 7504 --- [KozakBurgerShop] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-05T02:16:20.738+02:00  INFO 7504 --- [KozakBurgerShop] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T02:16:21.090+02:00  WARN 7504 --- [KozakBurgerShop] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-05T02:16:21.107+02:00  INFO 7504 --- [KozakBurgerShop] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2024-08-05T02:16:21.564+02:00  INFO 7504 --- [KozakBurgerShop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-05T02:16:21.573+02:00  INFO 7504 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : Started KozakBurgerShopApplication in 3.982 seconds (process running for 4.327)
+2024-08-05T02:16:51.399+02:00  INFO 7504 --- [KozakBurgerShop] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-05T02:16:51.399+02:00  INFO 7504 --- [KozakBurgerShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-05T02:16:51.400+02:00  INFO 7504 --- [KozakBurgerShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-05T02:16:51.493+02:00  INFO 7504 --- [KozakBurgerShop] [http-nio-8080-exec-1] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl with parameter [FAILED toString()]
+2024-08-05T02:16:51.527+02:00  INFO 7504 --- [KozakBurgerShop] [http-nio-8080-exec-1] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl finished its work
+2024-08-05T02:21:49.687+02:00  INFO 7504 --- [KozakBurgerShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T02:21:49.688+02:00  INFO 7504 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T02:21:49.690+02:00  INFO 7504 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T02:24:09.981+02:00  INFO 22948 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : Starting KozakBurgerShopApplication using Java 17.0.12 with PID 22948 (C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2\target\classes started by WORKMACHINE in C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2)
+2024-08-05T02:24:09.983+02:00  INFO 22948 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T02:24:10.449+02:00  INFO 22948 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-05T02:24:10.489+02:00  INFO 22948 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 3 JPA repository interfaces.
+2024-08-05T02:24:10.891+02:00  INFO 22948 --- [KozakBurgerShop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-05T02:24:10.898+02:00  INFO 22948 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-05T02:24:10.898+02:00  INFO 22948 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05T02:24:10.936+02:00  INFO 22948 --- [KozakBurgerShop] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-05T02:24:10.936+02:00  INFO 22948 --- [KozakBurgerShop] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 928 ms
+2024-08-05T02:24:11.004+02:00  INFO 22948 --- [KozakBurgerShop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T02:24:11.123+02:00  INFO 22948 --- [KozakBurgerShop] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4607d78b
+2024-08-05T02:24:11.124+02:00  INFO 22948 --- [KozakBurgerShop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T02:24:11.212+02:00  INFO 22948 --- [KozakBurgerShop] [main] liquibase.database                       : Set default schema name to public
+2024-08-05T02:24:11.547+02:00  INFO 22948 --- [KozakBurgerShop] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-05T02:24:11.574+02:00  INFO 22948 --- [KozakBurgerShop] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2024-08-05T02:24:11.575+02:00  INFO 22948 --- [KozakBurgerShop] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-05T02:24:11.580+02:00  INFO 22948 --- [KozakBurgerShop] [main] liquibase.util                           : UPDATE SUMMARY
+2024-08-05T02:24:11.580+02:00  INFO 22948 --- [KozakBurgerShop] [main] liquibase.util                           : Run:                          0
+2024-08-05T02:24:11.580+02:00  INFO 22948 --- [KozakBurgerShop] [main] liquibase.util                           : Previously run:               8
+2024-08-05T02:24:11.580+02:00  INFO 22948 --- [KozakBurgerShop] [main] liquibase.util                           : Filtered out:                 0
+2024-08-05T02:24:11.580+02:00  INFO 22948 --- [KozakBurgerShop] [main] liquibase.util                           : -------------------------------
+2024-08-05T02:24:11.581+02:00  INFO 22948 --- [KozakBurgerShop] [main] liquibase.util                           : Total change sets:            8
+2024-08-05T02:24:11.581+02:00  INFO 22948 --- [KozakBurgerShop] [main] liquibase.util                           : Update summary generated
+2024-08-05T02:24:11.595+02:00  INFO 22948 --- [KozakBurgerShop] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-08-05T02:24:11.596+02:00  INFO 22948 --- [KozakBurgerShop] [main] liquibase.command                        : Command execution complete
+2024-08-05T02:24:11.649+02:00  INFO 22948 --- [KozakBurgerShop] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-05T02:24:11.684+02:00  INFO 22948 --- [KozakBurgerShop] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-05T02:24:11.702+02:00  INFO 22948 --- [KozakBurgerShop] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-05T02:24:11.898+02:00  INFO 22948 --- [KozakBurgerShop] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-05T02:24:12.561+02:00  INFO 22948 --- [KozakBurgerShop] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-05T02:24:12.563+02:00  INFO 22948 --- [KozakBurgerShop] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T02:24:12.911+02:00  WARN 22948 --- [KozakBurgerShop] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-05T02:24:12.929+02:00  INFO 22948 --- [KozakBurgerShop] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2024-08-05T02:24:13.387+02:00  INFO 22948 --- [KozakBurgerShop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-05T02:24:13.396+02:00  INFO 22948 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : Started KozakBurgerShopApplication in 3.701 seconds (process running for 4.121)
+2024-08-05T02:24:16.784+02:00  INFO 22948 --- [KozakBurgerShop] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-05T02:24:16.784+02:00  INFO 22948 --- [KozakBurgerShop] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-05T02:24:16.785+02:00  INFO 22948 --- [KozakBurgerShop] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-05T02:24:16.867+02:00  INFO 22948 --- [KozakBurgerShop] [http-nio-8080-exec-2] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl with parameter [FAILED toString()]
+2024-08-05T02:24:16.902+02:00  INFO 22948 --- [KozakBurgerShop] [http-nio-8080-exec-2] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl finished its work
+2024-08-05T02:25:14.819+02:00  INFO 22948 --- [KozakBurgerShop] [http-nio-8080-exec-4] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl with parameter [FAILED toString()]
+2024-08-05T02:25:14.822+02:00  INFO 22948 --- [KozakBurgerShop] [http-nio-8080-exec-4] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl finished its work
+2024-08-05T02:25:34.192+02:00  INFO 22948 --- [KozakBurgerShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T02:25:34.193+02:00  INFO 22948 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T02:25:34.195+02:00  INFO 22948 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T02:25:40.672+02:00  INFO 21172 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : Starting KozakBurgerShopApplication using Java 17.0.12 with PID 21172 (C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2\target\classes started by WORKMACHINE in C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2)
+2024-08-05T02:25:40.673+02:00  INFO 21172 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T02:25:41.150+02:00  INFO 21172 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-05T02:25:41.187+02:00  INFO 21172 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 3 JPA repository interfaces.
+2024-08-05T02:25:41.594+02:00  INFO 21172 --- [KozakBurgerShop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-05T02:25:41.601+02:00  INFO 21172 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-05T02:25:41.601+02:00  INFO 21172 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05T02:25:41.644+02:00  INFO 21172 --- [KozakBurgerShop] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-05T02:25:41.644+02:00  INFO 21172 --- [KozakBurgerShop] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 947 ms
+2024-08-05T02:25:41.716+02:00  INFO 21172 --- [KozakBurgerShop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T02:25:41.826+02:00  INFO 21172 --- [KozakBurgerShop] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@b5d9f1e
+2024-08-05T02:25:41.827+02:00  INFO 21172 --- [KozakBurgerShop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T02:25:41.914+02:00  INFO 21172 --- [KozakBurgerShop] [main] liquibase.database                       : Set default schema name to public
+2024-08-05T02:25:42.258+02:00  INFO 21172 --- [KozakBurgerShop] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-05T02:25:42.283+02:00  INFO 21172 --- [KozakBurgerShop] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2024-08-05T02:25:42.284+02:00  INFO 21172 --- [KozakBurgerShop] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-05T02:25:42.289+02:00  INFO 21172 --- [KozakBurgerShop] [main] liquibase.util                           : UPDATE SUMMARY
+2024-08-05T02:25:42.289+02:00  INFO 21172 --- [KozakBurgerShop] [main] liquibase.util                           : Run:                          0
+2024-08-05T02:25:42.289+02:00  INFO 21172 --- [KozakBurgerShop] [main] liquibase.util                           : Previously run:               8
+2024-08-05T02:25:42.289+02:00  INFO 21172 --- [KozakBurgerShop] [main] liquibase.util                           : Filtered out:                 0
+2024-08-05T02:25:42.289+02:00  INFO 21172 --- [KozakBurgerShop] [main] liquibase.util                           : -------------------------------
+2024-08-05T02:25:42.289+02:00  INFO 21172 --- [KozakBurgerShop] [main] liquibase.util                           : Total change sets:            8
+2024-08-05T02:25:42.290+02:00  INFO 21172 --- [KozakBurgerShop] [main] liquibase.util                           : Update summary generated
+2024-08-05T02:25:42.303+02:00  INFO 21172 --- [KozakBurgerShop] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-08-05T02:25:42.304+02:00  INFO 21172 --- [KozakBurgerShop] [main] liquibase.command                        : Command execution complete
+2024-08-05T02:25:42.353+02:00  INFO 21172 --- [KozakBurgerShop] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-05T02:25:42.387+02:00  INFO 21172 --- [KozakBurgerShop] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-05T02:25:42.407+02:00  INFO 21172 --- [KozakBurgerShop] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-05T02:25:42.599+02:00  INFO 21172 --- [KozakBurgerShop] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-05T02:25:43.311+02:00  INFO 21172 --- [KozakBurgerShop] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-05T02:25:43.314+02:00  INFO 21172 --- [KozakBurgerShop] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T02:25:43.670+02:00  WARN 21172 --- [KozakBurgerShop] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-05T02:25:43.688+02:00  INFO 21172 --- [KozakBurgerShop] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2024-08-05T02:25:44.137+02:00  INFO 21172 --- [KozakBurgerShop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-05T02:25:44.144+02:00  INFO 21172 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : Started KozakBurgerShopApplication in 3.763 seconds (process running for 4.109)
+2024-08-05T02:25:48.206+02:00  INFO 21172 --- [KozakBurgerShop] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-05T02:25:48.206+02:00  INFO 21172 --- [KozakBurgerShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-05T02:25:48.207+02:00  INFO 21172 --- [KozakBurgerShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-05T02:25:48.293+02:00  INFO 21172 --- [KozakBurgerShop] [http-nio-8080-exec-1] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl with parameter [FAILED toString()]
+2024-08-05T02:25:48.330+02:00  INFO 21172 --- [KozakBurgerShop] [http-nio-8080-exec-1] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl finished its work
+2024-08-05T02:26:21.752+02:00  INFO 21172 --- [KozakBurgerShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T02:26:21.753+02:00  INFO 21172 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T02:26:21.755+02:00  INFO 21172 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T02:26:25.537+02:00  INFO 8164 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : Starting KozakBurgerShopApplication using Java 17.0.12 with PID 8164 (C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2\target\classes started by WORKMACHINE in C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2)
+2024-08-05T02:26:25.539+02:00  INFO 8164 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T02:26:26.043+02:00  INFO 8164 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-05T02:26:26.083+02:00  INFO 8164 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 3 JPA repository interfaces.
+2024-08-05T02:26:26.489+02:00  INFO 8164 --- [KozakBurgerShop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-05T02:26:26.496+02:00  INFO 8164 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-05T02:26:26.497+02:00  INFO 8164 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05T02:26:26.533+02:00  INFO 8164 --- [KozakBurgerShop] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-05T02:26:26.534+02:00  INFO 8164 --- [KozakBurgerShop] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 968 ms
+2024-08-05T02:26:26.605+02:00  INFO 8164 --- [KozakBurgerShop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T02:26:26.719+02:00  INFO 8164 --- [KozakBurgerShop] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@350ff014
+2024-08-05T02:26:26.720+02:00  INFO 8164 --- [KozakBurgerShop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T02:26:26.809+02:00  INFO 8164 --- [KozakBurgerShop] [main] liquibase.database                       : Set default schema name to public
+2024-08-05T02:26:27.160+02:00  INFO 8164 --- [KozakBurgerShop] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-05T02:26:27.191+02:00  INFO 8164 --- [KozakBurgerShop] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2024-08-05T02:26:27.192+02:00  INFO 8164 --- [KozakBurgerShop] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-05T02:26:27.198+02:00  INFO 8164 --- [KozakBurgerShop] [main] liquibase.util                           : UPDATE SUMMARY
+2024-08-05T02:26:27.198+02:00  INFO 8164 --- [KozakBurgerShop] [main] liquibase.util                           : Run:                          0
+2024-08-05T02:26:27.198+02:00  INFO 8164 --- [KozakBurgerShop] [main] liquibase.util                           : Previously run:               8
+2024-08-05T02:26:27.198+02:00  INFO 8164 --- [KozakBurgerShop] [main] liquibase.util                           : Filtered out:                 0
+2024-08-05T02:26:27.198+02:00  INFO 8164 --- [KozakBurgerShop] [main] liquibase.util                           : -------------------------------
+2024-08-05T02:26:27.198+02:00  INFO 8164 --- [KozakBurgerShop] [main] liquibase.util                           : Total change sets:            8
+2024-08-05T02:26:27.198+02:00  INFO 8164 --- [KozakBurgerShop] [main] liquibase.util                           : Update summary generated
+2024-08-05T02:26:27.210+02:00  INFO 8164 --- [KozakBurgerShop] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-08-05T02:26:27.211+02:00  INFO 8164 --- [KozakBurgerShop] [main] liquibase.command                        : Command execution complete
+2024-08-05T02:26:27.270+02:00  INFO 8164 --- [KozakBurgerShop] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-05T02:26:27.307+02:00  INFO 8164 --- [KozakBurgerShop] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-05T02:26:27.331+02:00  INFO 8164 --- [KozakBurgerShop] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-05T02:26:27.535+02:00  INFO 8164 --- [KozakBurgerShop] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-05T02:26:28.313+02:00  INFO 8164 --- [KozakBurgerShop] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-05T02:26:28.315+02:00  INFO 8164 --- [KozakBurgerShop] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T02:26:28.701+02:00  WARN 8164 --- [KozakBurgerShop] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-05T02:26:28.721+02:00  INFO 8164 --- [KozakBurgerShop] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2024-08-05T02:26:29.147+02:00  INFO 8164 --- [KozakBurgerShop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-05T02:26:29.154+02:00  INFO 8164 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : Started KozakBurgerShopApplication in 3.939 seconds (process running for 4.295)
+2024-08-05T02:26:30.712+02:00  INFO 8164 --- [KozakBurgerShop] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-05T02:26:30.712+02:00  INFO 8164 --- [KozakBurgerShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-05T02:26:30.713+02:00  INFO 8164 --- [KozakBurgerShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-05T02:26:30.792+02:00  INFO 8164 --- [KozakBurgerShop] [http-nio-8080-exec-1] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl with parameter [FAILED toString()]
+2024-08-05T02:26:30.826+02:00  INFO 8164 --- [KozakBurgerShop] [http-nio-8080-exec-1] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl finished its work
+2024-08-05T02:26:44.567+02:00  INFO 8164 --- [KozakBurgerShop] [http-nio-8080-exec-9] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl with parameter [FAILED toString()]
+2024-08-05T02:26:44.569+02:00  INFO 8164 --- [KozakBurgerShop] [http-nio-8080-exec-9] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl finished its work
+2024-08-05T02:26:52.645+02:00  INFO 8164 --- [KozakBurgerShop] [http-nio-8080-exec-5] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl with parameter [FAILED toString()]
+2024-08-05T02:26:52.647+02:00  INFO 8164 --- [KozakBurgerShop] [http-nio-8080-exec-5] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl finished its work
+2024-08-05T02:26:56.445+02:00  INFO 8164 --- [KozakBurgerShop] [http-nio-8080-exec-8] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl with parameter [FAILED toString()]
+2024-08-05T02:26:56.447+02:00  INFO 8164 --- [KozakBurgerShop] [http-nio-8080-exec-8] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl finished its work
+2024-08-05T02:27:02.757+02:00  INFO 8164 --- [KozakBurgerShop] [http-nio-8080-exec-2] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl with parameter [FAILED toString()]
+2024-08-05T02:27:02.791+02:00  INFO 8164 --- [KozakBurgerShop] [http-nio-8080-exec-2] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl finished its work
+2024-08-05T02:27:09.898+02:00  INFO 8164 --- [KozakBurgerShop] [http-nio-8080-exec-3] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl with parameter [FAILED toString()]
+2024-08-05T02:27:09.899+02:00  INFO 8164 --- [KozakBurgerShop] [http-nio-8080-exec-3] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl finished its work
+2024-08-05T02:27:28.101+02:00  INFO 8164 --- [KozakBurgerShop] [http-nio-8080-exec-4] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl with parameter [FAILED toString()]
+2024-08-05T02:27:28.103+02:00  INFO 8164 --- [KozakBurgerShop] [http-nio-8080-exec-4] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl finished its work
+2024-08-05T02:27:33.794+02:00  INFO 8164 --- [KozakBurgerShop] [http-nio-8080-exec-6] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl with parameter [FAILED toString()]
+2024-08-05T02:27:33.799+02:00  INFO 8164 --- [KozakBurgerShop] [http-nio-8080-exec-6] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl finished its work
+2024-08-05T02:27:39.632+02:00  INFO 8164 --- [KozakBurgerShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T02:27:39.633+02:00  INFO 8164 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T02:27:39.635+02:00  INFO 8164 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T02:32:59.959+02:00  INFO 30252 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : Starting KozakBurgerShopApplication using Java 17.0.12 with PID 30252 (C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2\target\classes started by WORKMACHINE in C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2)
+2024-08-05T02:32:59.961+02:00  INFO 30252 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T02:33:00.445+02:00  INFO 30252 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-05T02:33:00.486+02:00  INFO 30252 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 3 JPA repository interfaces.
+2024-08-05T02:33:00.925+02:00  INFO 30252 --- [KozakBurgerShop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-05T02:33:00.933+02:00  INFO 30252 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-05T02:33:00.933+02:00  INFO 30252 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05T02:33:00.975+02:00  INFO 30252 --- [KozakBurgerShop] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-05T02:33:00.975+02:00  INFO 30252 --- [KozakBurgerShop] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 987 ms
+2024-08-05T02:33:01.053+02:00  INFO 30252 --- [KozakBurgerShop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T02:33:01.274+02:00  INFO 30252 --- [KozakBurgerShop] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3f866f50
+2024-08-05T02:33:01.275+02:00  INFO 30252 --- [KozakBurgerShop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T02:33:01.366+02:00  INFO 30252 --- [KozakBurgerShop] [main] liquibase.database                       : Set default schema name to public
+2024-08-05T02:33:01.714+02:00  INFO 30252 --- [KozakBurgerShop] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-05T02:33:01.740+02:00  INFO 30252 --- [KozakBurgerShop] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2024-08-05T02:33:01.741+02:00  INFO 30252 --- [KozakBurgerShop] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-05T02:33:01.746+02:00  INFO 30252 --- [KozakBurgerShop] [main] liquibase.util                           : UPDATE SUMMARY
+2024-08-05T02:33:01.746+02:00  INFO 30252 --- [KozakBurgerShop] [main] liquibase.util                           : Run:                          0
+2024-08-05T02:33:01.746+02:00  INFO 30252 --- [KozakBurgerShop] [main] liquibase.util                           : Previously run:               8
+2024-08-05T02:33:01.746+02:00  INFO 30252 --- [KozakBurgerShop] [main] liquibase.util                           : Filtered out:                 0
+2024-08-05T02:33:01.746+02:00  INFO 30252 --- [KozakBurgerShop] [main] liquibase.util                           : -------------------------------
+2024-08-05T02:33:01.746+02:00  INFO 30252 --- [KozakBurgerShop] [main] liquibase.util                           : Total change sets:            8
+2024-08-05T02:33:01.747+02:00  INFO 30252 --- [KozakBurgerShop] [main] liquibase.util                           : Update summary generated
+2024-08-05T02:33:01.762+02:00  INFO 30252 --- [KozakBurgerShop] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-08-05T02:33:01.763+02:00  INFO 30252 --- [KozakBurgerShop] [main] liquibase.command                        : Command execution complete
+2024-08-05T02:33:01.815+02:00  INFO 30252 --- [KozakBurgerShop] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-05T02:33:01.846+02:00  INFO 30252 --- [KozakBurgerShop] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-05T02:33:01.867+02:00  INFO 30252 --- [KozakBurgerShop] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-05T02:33:02.066+02:00  INFO 30252 --- [KozakBurgerShop] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-05T02:33:02.734+02:00  INFO 30252 --- [KozakBurgerShop] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-05T02:33:02.736+02:00  INFO 30252 --- [KozakBurgerShop] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T02:33:03.097+02:00  WARN 30252 --- [KozakBurgerShop] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-05T02:33:03.116+02:00  INFO 30252 --- [KozakBurgerShop] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2024-08-05T02:33:03.578+02:00  INFO 30252 --- [KozakBurgerShop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-05T02:33:03.585+02:00  INFO 30252 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : Started KozakBurgerShopApplication in 3.913 seconds (process running for 4.33)
+2024-08-05T02:33:14.453+02:00  INFO 30252 --- [KozakBurgerShop] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-05T02:33:14.453+02:00  INFO 30252 --- [KozakBurgerShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-05T02:33:14.454+02:00  INFO 30252 --- [KozakBurgerShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-05T02:33:14.538+02:00  INFO 30252 --- [KozakBurgerShop] [http-nio-8080-exec-1] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl with parameter [FAILED toString()]
+2024-08-05T02:33:14.576+02:00  INFO 30252 --- [KozakBurgerShop] [http-nio-8080-exec-1] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl finished its work
+2024-08-05T02:33:25.256+02:00  INFO 30252 --- [KozakBurgerShop] [http-nio-8080-exec-5] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl with parameter [FAILED toString()]
+2024-08-05T02:33:25.273+02:00  WARN 30252 --- [KozakBurgerShop] [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2024-08-05T02:33:25.273+02:00 ERROR 30252 --- [KozakBurgerShop] [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : FEHLER: doppelter Schlüsselwert verletzt Unique-Constraint »product_title_key«
+  Detail: Schlüssel »(title)=(Nameneu)« existiert bereits.
+2024-08-05T02:33:25.276+02:00  INFO 30252 --- [KozakBurgerShop] [http-nio-8080-exec-5] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl finished its work
+2024-08-05T02:33:43.441+02:00  INFO 30252 --- [KozakBurgerShop] [http-nio-8080-exec-2] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl with parameter [FAILED toString()]
+2024-08-05T02:33:43.465+02:00  INFO 30252 --- [KozakBurgerShop] [http-nio-8080-exec-2] c.k.K.domain.logging.AspectLogging       : Method save called in ProductServiceImpl finished its work
+2024-08-05T02:33:56.217+02:00  INFO 30252 --- [KozakBurgerShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T02:33:56.218+02:00  INFO 30252 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T02:33:56.219+02:00  INFO 30252 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T02:56:14.785+02:00  INFO 24300 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : Starting KozakBurgerShopApplication using Java 17.0.12 with PID 24300 (C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2\target\classes started by WORKMACHINE in C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2)
+2024-08-05T02:56:14.787+02:00  INFO 24300 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T02:56:15.272+02:00  INFO 24300 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-05T02:56:15.313+02:00  INFO 24300 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 3 JPA repository interfaces.
+2024-08-05T02:56:15.732+02:00  INFO 24300 --- [KozakBurgerShop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-05T02:56:15.740+02:00  INFO 24300 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-05T02:56:15.742+02:00  INFO 24300 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05T02:56:15.787+02:00  INFO 24300 --- [KozakBurgerShop] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-05T02:56:15.788+02:00  INFO 24300 --- [KozakBurgerShop] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 977 ms
+2024-08-05T02:56:15.868+02:00  INFO 24300 --- [KozakBurgerShop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T02:56:15.978+02:00  INFO 24300 --- [KozakBurgerShop] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4607d78b
+2024-08-05T02:56:15.979+02:00  INFO 24300 --- [KozakBurgerShop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T02:56:16.075+02:00  INFO 24300 --- [KozakBurgerShop] [main] liquibase.database                       : Set default schema name to public
+2024-08-05T02:56:16.434+02:00  INFO 24300 --- [KozakBurgerShop] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-05T02:56:16.459+02:00  INFO 24300 --- [KozakBurgerShop] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2024-08-05T02:56:16.460+02:00  INFO 24300 --- [KozakBurgerShop] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-05T02:56:16.465+02:00  INFO 24300 --- [KozakBurgerShop] [main] liquibase.util                           : UPDATE SUMMARY
+2024-08-05T02:56:16.465+02:00  INFO 24300 --- [KozakBurgerShop] [main] liquibase.util                           : Run:                          0
+2024-08-05T02:56:16.465+02:00  INFO 24300 --- [KozakBurgerShop] [main] liquibase.util                           : Previously run:               8
+2024-08-05T02:56:16.465+02:00  INFO 24300 --- [KozakBurgerShop] [main] liquibase.util                           : Filtered out:                 0
+2024-08-05T02:56:16.465+02:00  INFO 24300 --- [KozakBurgerShop] [main] liquibase.util                           : -------------------------------
+2024-08-05T02:56:16.465+02:00  INFO 24300 --- [KozakBurgerShop] [main] liquibase.util                           : Total change sets:            8
+2024-08-05T02:56:16.466+02:00  INFO 24300 --- [KozakBurgerShop] [main] liquibase.util                           : Update summary generated
+2024-08-05T02:56:16.479+02:00  INFO 24300 --- [KozakBurgerShop] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-08-05T02:56:16.480+02:00  INFO 24300 --- [KozakBurgerShop] [main] liquibase.command                        : Command execution complete
+2024-08-05T02:56:16.533+02:00  INFO 24300 --- [KozakBurgerShop] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-05T02:56:16.563+02:00  INFO 24300 --- [KozakBurgerShop] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-05T02:56:16.586+02:00  INFO 24300 --- [KozakBurgerShop] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-05T02:56:16.790+02:00  INFO 24300 --- [KozakBurgerShop] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-05T02:56:17.470+02:00  INFO 24300 --- [KozakBurgerShop] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-05T02:56:17.471+02:00  INFO 24300 --- [KozakBurgerShop] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T02:56:17.823+02:00  WARN 24300 --- [KozakBurgerShop] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-05T02:56:17.842+02:00  INFO 24300 --- [KozakBurgerShop] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2024-08-05T02:56:18.301+02:00  INFO 24300 --- [KozakBurgerShop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-05T02:56:18.308+02:00  INFO 24300 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : Started KozakBurgerShopApplication in 3.837 seconds (process running for 4.226)
+2024-08-05T02:56:19.268+02:00  INFO 24300 --- [KozakBurgerShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T02:56:19.269+02:00  INFO 24300 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T02:56:19.271+02:00  INFO 24300 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T03:48:03.776+02:00  INFO 22512 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : Starting KozakBurgerShopApplication using Java 17.0.12 with PID 22512 (C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2\target\classes started by WORKMACHINE in C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2)
+2024-08-05T03:48:03.778+02:00  INFO 22512 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T03:48:04.267+02:00  INFO 22512 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-05T03:48:04.308+02:00  INFO 22512 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 3 JPA repository interfaces.
+2024-08-05T03:48:04.739+02:00  INFO 22512 --- [KozakBurgerShop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-05T03:48:04.747+02:00  INFO 22512 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-05T03:48:04.747+02:00  INFO 22512 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05T03:48:04.788+02:00  INFO 22512 --- [KozakBurgerShop] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-05T03:48:04.789+02:00  INFO 22512 --- [KozakBurgerShop] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 983 ms
+2024-08-05T03:48:04.869+02:00  INFO 22512 --- [KozakBurgerShop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T03:48:04.982+02:00  INFO 22512 --- [KozakBurgerShop] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@113dcaf8
+2024-08-05T03:48:04.984+02:00  INFO 22512 --- [KozakBurgerShop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T03:48:05.069+02:00  INFO 22512 --- [KozakBurgerShop] [main] liquibase.database                       : Set default schema name to public
+2024-08-05T03:48:05.528+02:00  INFO 22512 --- [KozakBurgerShop] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-05T03:48:05.571+02:00  INFO 22512 --- [KozakBurgerShop] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-05T03:48:05.597+02:00  INFO 22512 --- [KozakBurgerShop] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-05T03:48:05.787+02:00  INFO 22512 --- [KozakBurgerShop] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-05T03:48:06.453+02:00  INFO 22512 --- [KozakBurgerShop] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-05T03:48:06.454+02:00  INFO 22512 --- [KozakBurgerShop] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T03:48:06.819+02:00  WARN 22512 --- [KozakBurgerShop] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-05T03:48:06.839+02:00  INFO 22512 --- [KozakBurgerShop] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2024-08-05T03:48:07.319+02:00  INFO 22512 --- [KozakBurgerShop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-05T03:48:07.327+02:00  INFO 22512 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : Started KozakBurgerShopApplication in 3.851 seconds (process running for 4.189)
+2024-08-05T03:48:07.350+02:00  INFO 22512 --- [KozakBurgerShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T03:48:07.352+02:00  INFO 22512 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T03:48:07.353+02:00  INFO 22512 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T05:04:29.253+02:00  INFO 26924 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : Starting KozakBurgerShopApplication using Java 17.0.12 with PID 26924 (C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2\target\classes started by WORKMACHINE in C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2)
+2024-08-05T05:04:29.255+02:00  INFO 26924 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : The following 1 profile is active: "dev"
+2024-08-05T05:04:29.790+02:00  INFO 26924 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-05T05:04:29.830+02:00  INFO 26924 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 3 JPA repository interfaces.
+2024-08-05T05:04:30.277+02:00  INFO 26924 --- [KozakBurgerShop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-05T05:04:30.285+02:00  INFO 26924 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-05T05:04:30.286+02:00  INFO 26924 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05T05:04:30.328+02:00  INFO 26924 --- [KozakBurgerShop] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-05T05:04:30.328+02:00  INFO 26924 --- [KozakBurgerShop] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1042 ms
+2024-08-05T05:04:30.410+02:00  INFO 26924 --- [KozakBurgerShop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T05:04:30.524+02:00  INFO 26924 --- [KozakBurgerShop] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@48ccbb32
+2024-08-05T05:04:30.525+02:00  INFO 26924 --- [KozakBurgerShop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T05:04:30.615+02:00  INFO 26924 --- [KozakBurgerShop] [main] liquibase.database                       : Set default schema name to public
+2024-08-05T05:04:30.957+02:00  INFO 26924 --- [KozakBurgerShop] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-05T05:04:30.983+02:00  INFO 26924 --- [KozakBurgerShop] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2024-08-05T05:04:30.984+02:00  INFO 26924 --- [KozakBurgerShop] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-05T05:04:30.989+02:00  INFO 26924 --- [KozakBurgerShop] [main] liquibase.util                           : UPDATE SUMMARY
+2024-08-05T05:04:30.989+02:00  INFO 26924 --- [KozakBurgerShop] [main] liquibase.util                           : Run:                          0
+2024-08-05T05:04:30.989+02:00  INFO 26924 --- [KozakBurgerShop] [main] liquibase.util                           : Previously run:               8
+2024-08-05T05:04:30.989+02:00  INFO 26924 --- [KozakBurgerShop] [main] liquibase.util                           : Filtered out:                 0
+2024-08-05T05:04:30.989+02:00  INFO 26924 --- [KozakBurgerShop] [main] liquibase.util                           : -------------------------------
+2024-08-05T05:04:30.989+02:00  INFO 26924 --- [KozakBurgerShop] [main] liquibase.util                           : Total change sets:            8
+2024-08-05T05:04:30.990+02:00  INFO 26924 --- [KozakBurgerShop] [main] liquibase.util                           : Update summary generated
+2024-08-05T05:04:31.003+02:00  INFO 26924 --- [KozakBurgerShop] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-08-05T05:04:31.005+02:00  INFO 26924 --- [KozakBurgerShop] [main] liquibase.command                        : Command execution complete
+2024-08-05T05:04:31.059+02:00  INFO 26924 --- [KozakBurgerShop] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-05T05:04:31.095+02:00  INFO 26924 --- [KozakBurgerShop] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-05T05:04:31.117+02:00  INFO 26924 --- [KozakBurgerShop] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-05T05:04:31.325+02:00  INFO 26924 --- [KozakBurgerShop] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-05T05:04:31.996+02:00  INFO 26924 --- [KozakBurgerShop] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-05T05:04:31.998+02:00  INFO 26924 --- [KozakBurgerShop] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T05:04:32.351+02:00  WARN 26924 --- [KozakBurgerShop] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-05T05:04:32.370+02:00  INFO 26924 --- [KozakBurgerShop] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2024-08-05T05:04:32.818+02:00  INFO 26924 --- [KozakBurgerShop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-05T05:04:32.825+02:00  INFO 26924 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : Started KozakBurgerShopApplication in 3.88 seconds (process running for 4.248)
+2024-08-05T05:04:36.578+02:00  INFO 26924 --- [KozakBurgerShop] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-05T05:04:36.578+02:00  INFO 26924 --- [KozakBurgerShop] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-05T05:04:36.579+02:00  INFO 26924 --- [KozakBurgerShop] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-05T05:05:06.010+02:00  INFO 26924 --- [KozakBurgerShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T05:05:06.011+02:00  INFO 26924 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T05:05:06.013+02:00  INFO 26924 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T09:20:06.670+02:00  INFO 13760 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : Starting KozakBurgerShopApplication using Java 17.0.12 with PID 13760 (C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2\target\classes started by WORKMACHINE in C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2)
+2024-08-05T09:20:06.672+02:00  INFO 13760 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : The following 1 profile is active: "dev"
+2024-08-05T09:20:07.502+02:00  INFO 13760 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-05T09:20:07.607+02:00  INFO 13760 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91 ms. Found 3 JPA repository interfaces.
+2024-08-05T09:20:08.356+02:00  INFO 13760 --- [KozakBurgerShop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-05T09:20:08.370+02:00  INFO 13760 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-05T09:20:08.371+02:00  INFO 13760 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05T09:20:08.432+02:00  INFO 13760 --- [KozakBurgerShop] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-05T09:20:08.433+02:00  INFO 13760 --- [KozakBurgerShop] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1721 ms
+2024-08-05T09:20:08.493+02:00 ERROR 13760 --- [KozakBurgerShop] [main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'tokenFilter' defined in file [C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2\target\classes\com\kozak_burger\KozakBurgerShop\security\sec_filter\TokenFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'tokenService' defined in file [C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2\target\classes\com\kozak_burger\KozakBurgerShop\security\sec_service\TokenService.class]: Unsatisfied dependency expressed through constructor parameter 2: Error creating bean with name 'roleRepository' defined in com.kozak_burger.KozakBurgerShop.repository.RoleRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+2024-08-05T09:20:08.521+02:00  INFO 13760 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-08-05T09:20:08.530+02:00  WARN 13760 --- [KozakBurgerShop] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2024-08-05T09:20:08.539+02:00  INFO 13760 --- [KozakBurgerShop] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-05T09:20:08.568+02:00 ERROR 13760 --- [KozakBurgerShop] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:165) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:619) ~[spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.2.jar:3.3.2]
+	at com.kozak_burger.KozakBurgerShop.KozakBurgerShopApplication.main(KozakBurgerShopApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:147) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:107) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:516) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:222) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:188) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-3.3.2.jar:3.3.2]
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'tokenFilter' defined in file [C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2\target\classes\com\kozak_burger\KozakBurgerShop\security\sec_filter\TokenFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'tokenService' defined in file [C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2\target\classes\com\kozak_burger\KozakBurgerShop\security\sec_service\TokenService.class]: Unsatisfied dependency expressed through constructor parameter 2: Error creating bean with name 'roleRepository' defined in com.kozak_burger.KozakBurgerShop.repository.RoleRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:174) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:169) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:154) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:87) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:266) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:240) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4414) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:772) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:203) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:874) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:437) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:128) ~[spring-boot-3.3.2.jar:3.3.2]
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'tokenService' defined in file [C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2\target\classes\com\kozak_burger\KozakBurgerShop\security\sec_service\TokenService.class]: Unsatisfied dependency expressed through constructor parameter 2: Error creating bean with name 'roleRepository' defined in com.kozak_burger.KozakBurgerShop.repository.RoleRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782) ~[spring-beans-6.1.11.jar:6.1.11]
+	... 54 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'roleRepository' defined in com.kozak_burger.KozakBurgerShop.repository.RoleRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1705) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1454) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782) ~[spring-beans-6.1.11.jar:6.1.11]
+	... 68 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaSharedEM_entityManagerFactory': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:682) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365) ~[spring-beans-6.1.11.jar:6.1.11]
+	... 82 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Failed to instantiate [liquibase.integration.spring.SpringLiquibase]: Factory method 'liquibase' threw exception with message: Error creating bean with name 'digitalOceanDataSourceConfig': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365) ~[spring-beans-6.1.11.jar:6.1.11]
+	... 94 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [liquibase.integration.spring.SpringLiquibase]: Factory method 'liquibase' threw exception with message: Error creating bean with name 'digitalOceanDataSourceConfig': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:178) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644) ~[spring-beans-6.1.11.jar:6.1.11]
+	... 106 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'digitalOceanDataSourceConfig': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:514) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1439) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.getIfUnique(DefaultListableBeanFactory.java:2153) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration$LiquibaseConfiguration.liquibase(LiquibaseAutoConfiguration.java:102) ~[spring-boot-autoconfigure-3.3.2.jar:3.3.2]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:146) ~[spring-beans-6.1.11.jar:6.1.11]
+	... 107 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'DB_USERNAME' in value "${DB_USERNAME}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180) ~[spring-core-6.1.11.jar:6.1.11]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-6.1.11.jar:6.1.11]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-6.1.11.jar:6.1.11]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-6.1.11.jar:6.1.11]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:200) ~[spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:964) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1374) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508) ~[spring-beans-6.1.11.jar:6.1.11]
+	... 132 common frames omitted
+
+2024-08-05T09:22:17.836+02:00  INFO 4536 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : Starting KozakBurgerShopApplication using Java 17.0.12 with PID 4536 (C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2\target\classes started by WORKMACHINE in C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2)
+2024-08-05T09:22:17.839+02:00  INFO 4536 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : The following 1 profile is active: "dev"
+2024-08-05T09:22:18.704+02:00  INFO 4536 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-05T09:22:18.781+02:00  INFO 4536 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 3 JPA repository interfaces.
+2024-08-05T09:22:19.443+02:00  INFO 4536 --- [KozakBurgerShop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-05T09:22:19.454+02:00  INFO 4536 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-05T09:22:19.455+02:00  INFO 4536 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05T09:22:19.515+02:00  INFO 4536 --- [KozakBurgerShop] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-05T09:22:19.515+02:00  INFO 4536 --- [KozakBurgerShop] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1626 ms
+2024-08-05T09:22:19.648+02:00  INFO 4536 --- [KozakBurgerShop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T09:22:19.819+02:00  INFO 4536 --- [KozakBurgerShop] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1ad1c363
+2024-08-05T09:22:19.820+02:00  INFO 4536 --- [KozakBurgerShop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T09:22:19.960+02:00  INFO 4536 --- [KozakBurgerShop] [main] liquibase.database                       : Set default schema name to public
+2024-08-05T09:22:20.509+02:00  INFO 4536 --- [KozakBurgerShop] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-05T09:22:20.551+02:00  INFO 4536 --- [KozakBurgerShop] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2024-08-05T09:22:20.553+02:00  INFO 4536 --- [KozakBurgerShop] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-05T09:22:20.560+02:00  INFO 4536 --- [KozakBurgerShop] [main] liquibase.util                           : UPDATE SUMMARY
+2024-08-05T09:22:20.560+02:00  INFO 4536 --- [KozakBurgerShop] [main] liquibase.util                           : Run:                          0
+2024-08-05T09:22:20.560+02:00  INFO 4536 --- [KozakBurgerShop] [main] liquibase.util                           : Previously run:               8
+2024-08-05T09:22:20.560+02:00  INFO 4536 --- [KozakBurgerShop] [main] liquibase.util                           : Filtered out:                 0
+2024-08-05T09:22:20.560+02:00  INFO 4536 --- [KozakBurgerShop] [main] liquibase.util                           : -------------------------------
+2024-08-05T09:22:20.560+02:00  INFO 4536 --- [KozakBurgerShop] [main] liquibase.util                           : Total change sets:            8
+2024-08-05T09:22:20.561+02:00  INFO 4536 --- [KozakBurgerShop] [main] liquibase.util                           : Update summary generated
+2024-08-05T09:22:20.581+02:00  INFO 4536 --- [KozakBurgerShop] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-08-05T09:22:20.582+02:00  INFO 4536 --- [KozakBurgerShop] [main] liquibase.command                        : Command execution complete
+2024-08-05T09:22:20.671+02:00  INFO 4536 --- [KozakBurgerShop] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-05T09:22:20.725+02:00  INFO 4536 --- [KozakBurgerShop] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-05T09:22:20.768+02:00  INFO 4536 --- [KozakBurgerShop] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-05T09:22:21.116+02:00  INFO 4536 --- [KozakBurgerShop] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-05T09:22:22.192+02:00  INFO 4536 --- [KozakBurgerShop] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-05T09:22:22.195+02:00  INFO 4536 --- [KozakBurgerShop] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T09:22:22.785+02:00  WARN 4536 --- [KozakBurgerShop] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-05T09:22:22.812+02:00  INFO 4536 --- [KozakBurgerShop] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2024-08-05T09:22:23.552+02:00  INFO 4536 --- [KozakBurgerShop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-05T09:22:23.564+02:00  INFO 4536 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : Started KozakBurgerShopApplication in 6.185 seconds (process running for 6.827)
+2024-08-05T09:22:26.254+02:00  INFO 4536 --- [KozakBurgerShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T09:22:26.256+02:00  INFO 4536 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T09:22:26.258+02:00  INFO 4536 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T11:43:02.603+02:00  INFO 2152 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : Starting KozakBurgerShopApplication using Java 17.0.12 with PID 2152 (C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2\target\classes started by WORKMACHINE in C:\Users\WORKMACHINE\Desktop\Project\KozakBurgerShopV2)
+2024-08-05T11:43:02.604+02:00  INFO 2152 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : The following 1 profile is active: "dev"
+2024-08-05T11:43:03.146+02:00  INFO 2152 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-05T11:43:03.189+02:00  INFO 2152 --- [KozakBurgerShop] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 3 JPA repository interfaces.
+2024-08-05T11:43:03.646+02:00  INFO 2152 --- [KozakBurgerShop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-05T11:43:03.653+02:00  INFO 2152 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-05T11:43:03.654+02:00  INFO 2152 --- [KozakBurgerShop] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05T11:43:03.696+02:00  INFO 2152 --- [KozakBurgerShop] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-05T11:43:03.696+02:00  INFO 2152 --- [KozakBurgerShop] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1065 ms
+2024-08-05T11:43:03.778+02:00  INFO 2152 --- [KozakBurgerShop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T11:43:03.920+02:00  INFO 2152 --- [KozakBurgerShop] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1544ded3
+2024-08-05T11:43:03.921+02:00  INFO 2152 --- [KozakBurgerShop] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T11:43:04.026+02:00  INFO 2152 --- [KozakBurgerShop] [main] liquibase.database                       : Set default schema name to public
+2024-08-05T11:43:04.405+02:00  INFO 2152 --- [KozakBurgerShop] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-05T11:43:04.436+02:00  INFO 2152 --- [KozakBurgerShop] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2024-08-05T11:43:04.437+02:00  INFO 2152 --- [KozakBurgerShop] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-05T11:43:04.442+02:00  INFO 2152 --- [KozakBurgerShop] [main] liquibase.util                           : UPDATE SUMMARY
+2024-08-05T11:43:04.442+02:00  INFO 2152 --- [KozakBurgerShop] [main] liquibase.util                           : Run:                          0
+2024-08-05T11:43:04.442+02:00  INFO 2152 --- [KozakBurgerShop] [main] liquibase.util                           : Previously run:               8
+2024-08-05T11:43:04.442+02:00  INFO 2152 --- [KozakBurgerShop] [main] liquibase.util                           : Filtered out:                 0
+2024-08-05T11:43:04.442+02:00  INFO 2152 --- [KozakBurgerShop] [main] liquibase.util                           : -------------------------------
+2024-08-05T11:43:04.442+02:00  INFO 2152 --- [KozakBurgerShop] [main] liquibase.util                           : Total change sets:            8
+2024-08-05T11:43:04.443+02:00  INFO 2152 --- [KozakBurgerShop] [main] liquibase.util                           : Update summary generated
+2024-08-05T11:43:04.458+02:00  INFO 2152 --- [KozakBurgerShop] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-08-05T11:43:04.459+02:00  INFO 2152 --- [KozakBurgerShop] [main] liquibase.command                        : Command execution complete
+2024-08-05T11:43:04.522+02:00  INFO 2152 --- [KozakBurgerShop] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-05T11:43:04.572+02:00  INFO 2152 --- [KozakBurgerShop] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-05T11:43:04.598+02:00  INFO 2152 --- [KozakBurgerShop] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-05T11:43:04.822+02:00  INFO 2152 --- [KozakBurgerShop] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-05T11:43:05.539+02:00  INFO 2152 --- [KozakBurgerShop] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-05T11:43:05.541+02:00  INFO 2152 --- [KozakBurgerShop] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T11:43:05.916+02:00  WARN 2152 --- [KozakBurgerShop] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-05T11:43:05.934+02:00  INFO 2152 --- [KozakBurgerShop] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2024-08-05T11:43:06.402+02:00  INFO 2152 --- [KozakBurgerShop] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-05T11:43:06.409+02:00  INFO 2152 --- [KozakBurgerShop] [main] c.k.K.KozakBurgerShopApplication         : Started KozakBurgerShopApplication in 4.109 seconds (process running for 7.019)
+2024-08-05T11:43:13.221+02:00  INFO 2152 --- [KozakBurgerShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T11:43:13.222+02:00  INFO 2152 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T11:43:13.224+02:00  INFO 2152 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

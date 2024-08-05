@@ -1,16 +1,17 @@
-
 package com.kozak_burger.KozakBurgerShop.controller;
 
 import com.kozak_burger.KozakBurgerShop.domain.dto.ProductDto;
+import com.kozak_burger.KozakBurgerShop.exception_handling.Response;
 import com.kozak_burger.KozakBurgerShop.domain.entity.Product;
 import com.kozak_burger.KozakBurgerShop.service.interfaces.ProductService;
-import org.springframework.web.bind.annotation.*;
 
+import org.springframework.web.bind.annotation.*;
+import org.springframework.http.HttpStatus;
 import java.math.BigDecimal;
 import java.util.List;
 
 @RestController
-@RequestMapping("/products")
+@RequestMapping("/product")
 public class ProductController {
 
     private ProductService service;
@@ -58,7 +59,9 @@ public class ProductController {
     }
 
     @DeleteMapping
-    public void delete(@RequestParam(required = false) Long id, @RequestParam(required = false) String title)
+    public void delete
+	(@RequestParam(required = false) Long id, 
+	@RequestParam(required = false) String title)
     {
         if (id != null) {
             service.deleteById(id);
