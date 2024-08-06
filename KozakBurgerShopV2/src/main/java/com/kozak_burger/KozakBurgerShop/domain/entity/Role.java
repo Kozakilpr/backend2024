@@ -40,4 +40,12 @@ public class Role implements GrantedAuthority {
     public String toString() {
         return String.format("Role: id - %d, title -%s}", id, title);
     }
+
+    public Role orElse(Object o) {
+        return null;
+    }
+
+    public Role orElseThrow(Object o) {
+        return null;
+    }
 }

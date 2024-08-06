@@ -2,7 +2,9 @@ package com.kozak_burger.KozakBurgerShop.security.sec_service;
 
 import com.kozak_burger.KozakBurgerShop.domain.entity.User;
 import com.kozak_burger.KozakBurgerShop.security.sec_dto.TokenResponseDto;
-import com.kozak_burger.KozakBurgerShop.service.UserService;
+import com.kozak_burger.KozakBurgerShop.service.interfaces.UserService;
+
+
 import io.jsonwebtoken.Claims;
 import jakarta.security.auth.message.AuthException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;

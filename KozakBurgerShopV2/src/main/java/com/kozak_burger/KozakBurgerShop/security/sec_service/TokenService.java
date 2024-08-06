@@ -11,11 +11,13 @@ import io.jsonwebtoken.security.Keys;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+import java.math.BigDecimal;
 import javax.crypto.SecretKey;
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.*;
+
 
 @Service
 public class TokenService {
@@ -41,7 +43,7 @@ public class TokenService {
         Date expirationDate = Date.from(tokenExpiration);
 
         //LocalDateTime expiresAt = now.plusHours(2);
-            return Jwts.builder()
+        return Jwts.builder()
             .subject(user.getUsername())
             .expiration(expirationDate)
             .signWith(accessKey)
@@ -98,6 +100,7 @@ public class TokenService {
 
     public AuthInfo mapClaimsToAuthInfo(Claims claims) {
         String username = claims.getSubject();
+
 
         List<LinkedHashMap<String, String>> rolesList = (List<LinkedHashMap<String, String>>) claims.get("roles");
 

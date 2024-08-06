@@ -2,7 +2,7 @@ spring:
   application:
     name: KozakBurgerShop
   datasource:
-    url: jdbc:postgresql://localhost:5432/KozakTest2
+    url: jdbc:postgresql://localhost:5432/Gusto
     username: postgres
     password: 1234
     driver-class-name: org.postgresql.Driver
@@ -22,7 +22,3 @@ logging:
     name: logs/logfile.log
   level:
     root: info
-
-
-messages:
-  hello: Hello from local application!

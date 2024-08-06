@@ -1,12 +1,14 @@
 package com.kozak_burger.KozakBurgerShop.domain.entity;
 
+import com.kozak_burger.KozakBurgerShop.domain.entity.Cart;
+
 import jakarta.persistence.*;
 import java.util.Objects;
 
 
 
 @Entity
-@Table(name = "сustomer")
+@Table(name = "customer")
 public class Customer {
 
     //Нужно решить что и куда переложить
@@ -39,6 +41,11 @@ public class Customer {
 
     @Column(name = "active")
     private boolean active;
+	
+    @OneToOne(mappedBy = "customer", cascade = CascadeType.PERSIST)
+    private Cart cart;
+
+
 
    // private Cart cart;
 
@@ -114,30 +121,31 @@ public class Customer {
         this.active = active;
     }
 
-//    public Cart getCart() {
-//        return cart;
-//    }
-//
-//    public void setCart(Cart cart) {
-//        this.cart = cart;
-//    }
+    public Cart getCart() {
+        return cart;
+    }
+
+   public void setCart(Cart cart) {
+        this.cart = cart;
+    }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Customer customer = (Customer) o;
-        return phoneNumber == customer.phoneNumber && active == customer.active && Objects.equals(id, customer.id) && Objects.equals(name, customer.name) && Objects.equals(surname, customer.surname) && Objects.equals(street, customer.street) && Objects.equals(city, customer.city) && Objects.equals(postalAddress, customer.postalAddress) && Objects.equals(email, customer.email);
+        return phoneNumber == customer.phoneNumber && active == customer.active && Objects.equals(id, customer.id) && Objects.equals(name, customer.name) && Objects.equals(surname, customer.surname) && Objects.equals(street, customer.street) && Objects.equals(city, customer.city) && Objects.equals(postalAddress, customer.postalAddress) && Objects.equals(email, customer.email) && Objects.equals(cart, customer.cart);
     }
-//&& Objects.equals(cart, customer.cart
+	
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, surname, street, city, postalAddress, email, phoneNumber, active);
+        return Objects.hash(id, name, surname, street, city, postalAddress, email, phoneNumber, active, cart);
     }
-    //, cart
+	
+	
     @Override
     public String toString() {
-        return String.format("Customer: id - %d, name -%s, surname -%s, street -%s, city -%s, postalAddress -%s, email - %s, phoneNumber - %d, active - %s", id, name, surname, street, city, postalAddress, email, phoneNumber, active ? "yes" : "no");
+        return String.format("Customer: id - %d, name -%s, surname -%s, street -%s, city -%s, postalAddress -%s, email - %s, phoneNumber - %d, active - %s, cart - %s", id, name, surname, street, city, postalAddress, email, phoneNumber, active ? "yes" : "no", cart);
     }
 //cart - %s  , cart == null ? "ERROR! Cart is missing" : cart
 }

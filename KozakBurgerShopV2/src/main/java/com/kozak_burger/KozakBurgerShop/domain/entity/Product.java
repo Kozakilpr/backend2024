@@ -16,8 +16,8 @@ public class Product {
     @Column(name = "id")
     private Long id;
 
-    @NotNull(message = "Die Bezeichnung kann nicht leer sein")
-    @NotBlank(message = "Bitte geben Sie dem Produkt einen Namen")
+    @NotNull(message = "Die Bezeichnung kann nicht leer sein!")
+    @NotBlank(message = "Bitte geben Sie dem Produkt einen Namen!")
     @Pattern(
             regexp = "[A-Z][a-z ]{2,}",
             message = "Bezeichnung von Produkt, sollte nicht kürzer als 3 Zeichen sein! " + " Die Bezeichnung soll mit Großbuchstaben beginnen!"
@@ -39,6 +39,9 @@ public class Product {
     @Column(name = "category")
     private String category;
 
+	@Pattern(
+            regexp = "[1-10]{1,1}",
+            message = "Bezeichnung soll nur eine Zahl von 1 bis 5 sein!")
     @Column(name = "rate")
     private double rate;
 
