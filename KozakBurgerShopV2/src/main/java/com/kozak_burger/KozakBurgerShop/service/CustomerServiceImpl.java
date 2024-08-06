@@ -105,8 +105,8 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public void deleteByTitle(String name) {
-        List<Customer> customers = repository.findByTitle(name);
+    public void deleteByName(String name) {
+        List<Customer> customers = repository.findByName(name);
         for (Customer customer : customers) {
             customer.setActive(false);
             repository.save(customer);

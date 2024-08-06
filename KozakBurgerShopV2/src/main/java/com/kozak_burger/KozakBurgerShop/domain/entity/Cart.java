@@ -15,7 +15,7 @@ import java.math.RoundingMode;
 import java.util.Iterator;
 
 
-//@Entity
+@Entity
 @Table(name = "cart")
 public class Cart {
 

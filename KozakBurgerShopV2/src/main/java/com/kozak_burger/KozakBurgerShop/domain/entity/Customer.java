@@ -3,6 +3,8 @@ package com.kozak_burger.KozakBurgerShop.domain.entity;
 import com.kozak_burger.KozakBurgerShop.domain.entity.Cart;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
+
 import java.util.Objects;
 
 
@@ -18,9 +20,11 @@ public class Customer {
     @Column(name = "id")
     private Long id;
 
+    @NotNull(message = "Der Name kann nicht leer sein!")
     @Column(name = "name")
     private String name;
 
+    @NotNull(message = "Der Nachname kann nicht leer sein!")
     @Column(name = "surname")
     private String surname;
 
@@ -37,7 +41,7 @@ public class Customer {
     private String email;
 
     @Column(name = "phoneNumber")
-    private int phoneNumber;
+    private String phoneNumber;
 
     @Column(name = "active")
     private boolean active;
@@ -105,11 +109,11 @@ public class Customer {
         this.email = email;
     }
 
-    public int getPhoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(int phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 

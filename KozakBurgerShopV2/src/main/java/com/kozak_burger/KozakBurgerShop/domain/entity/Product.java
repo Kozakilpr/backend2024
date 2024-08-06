@@ -130,18 +130,6 @@ public class Product {
         return String.format("Product: id - %d, title - %s, price - %s, image - %s, description -%s, category - %s, rate -%d, active - %s", id, title, price, image, description, category, rate, active ? "yes" : "no");
     }
 
-    //    @Override
-//    public boolean equals(Object o) {
-//        if (this == o) return true;
-//        if (o == null || getClass() != o.getClass()) return false;
-//        Product product = (Product) o;
-//        return active == product.active && Objects.equals(id, product.id) && Objects.equals(title, product.title) && Objects.equals(price, product.price);
-//    }
-//
-//    @Override
-//    public int hashCode() {
-//        return Objects.hash(id, title, price, active);
-//    }
-//
+
 
 }

@@ -12,7 +12,7 @@ public interface CustomerService {
         CustomerDto getById(Long id);
         CustomerDto update(CustomerDto customerDto);
         void deleteById(Long id);
-        void deleteByTitle(String name);
+        void deleteByName(String name);
         void restoreById(Long id);
         long getActiveCustomersQuantity();
 		BigDecimal getTotalCostOfCustomersProducts(Long customerId);

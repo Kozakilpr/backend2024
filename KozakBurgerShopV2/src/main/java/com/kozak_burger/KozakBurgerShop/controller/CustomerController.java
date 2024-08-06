@@ -44,7 +44,7 @@ public class CustomerController {
         if (id != null) {
             service.deleteById(id);
         } else if (name != null) {
-            service.deleteByTitle(name);
+            service.deleteByName(name);
         }
     }
 

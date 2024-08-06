@@ -11,7 +11,7 @@
 	</parent>
 
 	<groupId>com.kozak-burger</groupId>
-	<artifactId>KozakBurgerShopV2</artifactId>
+	<artifactId>Gusto</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<name>KozakBurgerShop</name>

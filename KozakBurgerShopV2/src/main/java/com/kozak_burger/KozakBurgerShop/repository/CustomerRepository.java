@@ -10,7 +10,7 @@ import java.util.List;
 public interface CustomerRepository extends JpaRepository<Customer, Long> {
 
 
-    List<Customer> findByTitle(String title);
+    List<Customer> findByName(String name);
 
 
     long countByActive(boolean active);
