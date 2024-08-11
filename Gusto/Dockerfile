@@ -10,9 +10,7 @@ RUN mvn -DskipTests=true clean package
 
 RUN mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
 
-FROM openjdk:17.0.1-jdk-slim
-
-ENV JAVA_HOME=/usr/local/openjdk-17
+FROM eclipse-temurin:17-jre-alpine
 
 ARG DEPENDENCY=/workspace/application/target/dependency
 
