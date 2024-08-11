@@ -9,12 +9,12 @@ RUN mvn -DskipTests=true clean package
 
 RUN mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
 
-FROM openjdk:17.0.1-jdk-slim
+FROM eclipse-temurin:17-jre-alpine
 
-ARG DEPENDENCY=/workspace/application/target/dependency
+ARG DEPENDENCY=/workspace/app/target/dependency
 
-COPY --from=build ${DEPENDENCY}/BOOT-INF/lib /application/lib
-COPY --from=build ${DEPENDENCY}/META-INF /application/META-INF
-COPY --from=build ${DEPENDENCY}/BOOT-INF/classes /application
+COPY --from=build ${DEPENDENCY}/BOOT-INF/lib /app/lib
+COPY --from=build ${DEPENDENCY}/META-INF /app/META-INF
+COPY --from=build ${DEPENDENCY}/BOOT-INF/classes /app
 
 ENTRYPOINT ["java", "-cp", "app:app/lib/*", "com.kozak_burger.KozakBurgerShop.KozakBurgerShopApplication"]
