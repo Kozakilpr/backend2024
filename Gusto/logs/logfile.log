@@ -1,0 +1,7 @@
+2024-08-11T16:23:32.392+02:00  WARN 10968 --- [KozakBurgerShop] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20h17m16s192ms361µs700ns).
+2024-08-11T16:57:57.010+02:00  WARN 10968 --- [KozakBurgerShop] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m54s131ms861µs800ns).
+2024-08-11T18:14:50.032+02:00  WARN 10968 --- [KozakBurgerShop] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=34m52s394ms858µs200ns).
+2024-08-11T19:21:10.035+02:00  WARN 10968 --- [KozakBurgerShop] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m51s354ms296µs300ns).
+2024-08-11T19:37:27.724+02:00  INFO 10968 --- [KozakBurgerShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-11T19:37:27.740+02:00  INFO 10968 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-11T19:37:27.747+02:00  INFO 10968 --- [KozakBurgerShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
