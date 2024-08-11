@@ -49,8 +49,8 @@ public class DigitalOceanDataSourceConfig {
 	
 	  public static void main(String[] args) {
         User user = new User();
-        user.setPassword("111");
-        user.setUsername("Test");
+        user.setPassword("admin");
+        user.setUsername("Admin");
         Product product = new Product();
         product.setName("Prod");
         Object[] array = {user, product};
